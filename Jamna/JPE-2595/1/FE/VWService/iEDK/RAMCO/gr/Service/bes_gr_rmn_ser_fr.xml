@@ -1,0 +1,101 @@
+<RvwService serviceName="gr_rmn_ser_fr" serviceType="2" inSegs="tbl_mseg;" outSegs="errordetails;" ioSegs="hdrseg;" scSegs="" inSegCnt="1" outSegCnt="0" scSegCnt="0" psCnt="1" ioSegCnt="1" dataSegs="hdrseg;tbl_mseg;" segCnt="2">
+    <PS sectionType="0" seqNo="2" controlExpressionEval="false" controlExpression="" loopingStyle="0" loopCausingSegment="" ceInstDepFlag="0" brsCnt="1" sectionName="gr_ps_fr_tbl">
+        <BR seqNo="1" cSeqNo="1" executionMode="0" baseArtifact="false" isMethod="1" progID="" methodName="gr_rmn_met_frtbl_iedk" integServiceName="" controlExpressionEval="false" controlExpression="" executionFlag="1" loopSegment="tbl_mseg" modeFlagExpression="" methodID="0" accessesDatabase="1" systemGenerated="1" broName="" ceInstDepFlag="0" spName="gr_rmn_sp_frtbl_iedk" disable="false" operationType="1" spErrorProtocol="0" brppCnt="40" brlpCnt="0">
+            <PP physicalParameterName="ctxt_language" seqNo="1" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="language" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_ouinstance" seqNo="2" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="ouinstance" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_service" seqNo="3" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="service" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_user" seqNo="4" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="user" spParameterType="CHAR" />
+            <PP physicalParameterName="debitnoteamount" seqNo="5" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="debitnoteamount" spParameterType="NUMERIC" />
+            <PP physicalParameterName="statushdr" seqNo="6" isCompoundParam="1" flowDirection="0" dataSegmentName="hdrseg" dataItemName="statushdr" spParameterType="CHAR" />
+            <PP physicalParameterName="receiptdateml" seqNo="7" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="receiptdateml" spParameterType="DATE" />
+            <PP physicalParameterName="crtgrnrejdesc" seqNo="8" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="crtgrnrejdesc" spParameterType="CHAR" />
+            <PP physicalParameterName="recno" seqNo="9" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="recno" spParameterType="CHAR" />
+            <PP physicalParameterName="refdoc_mlt" seqNo="10" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="refdoc_mlt" spParameterType="CHAR" />
+            <PP physicalParameterName="returnnoteno" seqNo="11" isCompoundParam="1" flowDirection="0" dataSegmentName="hdrseg" dataItemName="returnnoteno" spParameterType="CHAR" />
+            <PP physicalParameterName="guid" seqNo="12" isCompoundParam="1" flowDirection="0" dataSegmentName="hdrseg" dataItemName="guid" spParameterType="CHAR" />
+            <PP physicalParameterName="item_codeml" seqNo="13" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="item_codeml" spParameterType="CHAR" />
+            <PP physicalParameterName="itemdescriptionml" seqNo="14" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="itemdescriptionml" spParameterType="CHAR" />
+            <PP physicalParameterName="line_no" seqNo="15" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="line_no" spParameterType="INTEGER" />
+            <PP physicalParameterName="receiptlineno" seqNo="16" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="receiptlineno" spParameterType="INTEGER" />
+            <PP physicalParameterName="modeflag" seqNo="17" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="modeflag" spParameterType="CHAR" />
+            <PP physicalParameterName="amendmentnoml" seqNo="18" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="amendmentnoml" spParameterType="INTEGER" />
+            <PP physicalParameterName="refdoccreatedat" seqNo="19" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="refdoccreatedat" spParameterType="CHAR" />
+            <PP physicalParameterName="grn_createdou" seqNo="20" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="grn_createdou" spParameterType="CHAR" />
+            <PP physicalParameterName="accptqtyml" seqNo="21" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="accptqtyml" spParameterType="NUMERIC" />
+            <PP physicalParameterName="altretqty" seqNo="22" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="altretqty" spParameterType="NUMERIC" />
+            <PP physicalParameterName="debitnoteqty" seqNo="23" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="debitnoteqty" spParameterType="NUMERIC" />
+            <PP physicalParameterName="pendingqty" seqNo="24" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="pendingqty" spParameterType="NUMERIC" />
+            <PP physicalParameterName="receivedqty" seqNo="25" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="receivedqty" spParameterType="NUMERIC" />
+            <PP physicalParameterName="rejctqtyml" seqNo="26" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="rejctqtyml" spParameterType="NUMERIC" />
+            <PP physicalParameterName="resupplyqty" seqNo="27" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="resupplyqty" spParameterType="NUMERIC" />
+            <PP physicalParameterName="returnnoteqty" seqNo="28" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="returnnoteqty" spParameterType="NUMERIC" />
+            <PP physicalParameterName="returnqty" seqNo="29" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="returnqty" spParameterType="NUMERIC" />
+            <PP physicalParameterName="todatereturnnoteqty" seqNo="30" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="todatereturnnoteqty" spParameterType="NUMERIC" />
+            <PP physicalParameterName="returnrate" seqNo="31" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="returnrate" spParameterType="NUMERIC" />
+            <PP physicalParameterName="unitrate" seqNo="32" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="unitrate" spParameterType="NUMERIC" />
+            <PP physicalParameterName="crtgrn_rejcode" seqNo="33" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="crtgrn_rejcode" spParameterType="CHAR" />
+            <PP physicalParameterName="refdoctype_mlt" seqNo="34" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="refdoctype_mlt" spParameterType="CHAR" />
+            <PP physicalParameterName="grn_projdesc" seqNo="35" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="grn_projdesc" spParameterType="CHAR" />
+            <PP physicalParameterName="grn_projcode" seqNo="36" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="grn_projcode" spParameterType="CHAR" />
+            <PP physicalParameterName="uommult" seqNo="37" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="uommult" spParameterType="CHAR" />
+            <PP physicalParameterName="ppaltuom" seqNo="38" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="ppaltuom" spParameterType="CHAR" />
+            <PP physicalParameterName="variantno" seqNo="39" isCompoundParam="1" flowDirection="0" dataSegmentName="tbl_mseg" dataItemName="variantno" spParameterType="CHAR" />
+            <PP physicalParameterName="fprowno" seqNo="40" isCompoundParam="1" flowDirection="2" dataSegmentName="hdrseg" dataItemName="fprowno" spParameterType="INTEGER" />
+        </BR>
+    </PS>
+    <SEG segmentName="fw_context" seqNo="1" instanceFlag="0" flowDirection="2" mandatory="1" isPartOfHierarchy="1" segKeys="" diCnt="13" inDINames="" ioDINames="sectoken;component;service;ouinstance;componentinstance;" outDINames="transactionobject;user;language;txntime;txnid;txnoutcome;" scDINames="connectionstring;role;" diNames="sectoken;component;service;ouinstance;componentinstance;transactionobject;user;language;txntime;txnid;txnoutcome;connectionstring;role;" inDICnt="0" outDICnt="6" ioDICnt="5" scDICnt="2">
+        <DI dataItemName="transactionobject" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="user" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="language" dataType="3" dataLength="20" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="sectoken" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="component" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="service" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="ouinstance" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="componentinstance" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="txntime" dataType="8" dataLength="50" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="txnid" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="txnoutcome" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="connectionstring" dataType="8" dataLength="255" isPartOfKey="0" flowAttribute="3" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="0" />
+        <DI dataItemName="role" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="3" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="0" />
+    </SEG>
+    <SEG segmentName="hdrseg" seqNo="2" instanceFlag="0" flowDirection="2" mandatory="0" isPartOfHierarchy="0" segKeys="" diCnt="4" inDINames="" ioDINames="" outDINames="" scDINames="" diNames="" inDICnt="0" outDICnt="0" ioDICnt="0" scDICnt="0" baseArtifact="true">
+        <DI dataItemName="fprowno" dataType="3" dataLength="4" isPartOfKey="0" flowAttribute="3" mandatoryFlag="0" defaultValue="-915" bt_Type="INTEGER" isModel="0" baseArtifact="true" />
+        <DI dataItemName="guid" dataType="8" dataLength="128" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+        <DI dataItemName="returnnoteno" dataType="8" dataLength="18" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+        <DI dataItemName="statushdr" dataType="8" dataLength="20" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+    </SEG>
+    <SEG segmentName="tbl_mseg" seqNo="2" instanceFlag="1" flowDirection="0" mandatory="0" isPartOfHierarchy="1" segKeys="" diCnt="32" inDINames="" ioDINames="" outDINames="" scDINames="" diNames="" inDICnt="0" outDICnt="0" ioDICnt="0" scDICnt="0" baseArtifact="true">
+        <DI dataItemName="accptqtyml" dataType="5" dataLength="28" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="NUMERIC" isModel="" baseArtifact="true" precision="4" />
+        <DI dataItemName="altretqty" dataType="5" dataLength="28" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="NUMERIC" isModel="" baseArtifact="true" precision="4" />
+        <DI dataItemName="amendmentnoml" dataType="3" dataLength="4" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="INTEGER" isModel="" baseArtifact="true" />
+        <DI dataItemName="crtgrn_rejcode" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+        <DI dataItemName="crtgrnrejdesc" dataType="8" dataLength="100" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+        <DI dataItemName="debitnoteamount" dataType="5" dataLength="28" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="NUMERIC" isModel="" baseArtifact="true" precision="8" />
+        <DI dataItemName="debitnoteqty" dataType="5" dataLength="28" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="NUMERIC" isModel="" baseArtifact="true" precision="4" />
+        <DI dataItemName="grn_createdou" dataType="8" dataLength="16" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+        <DI dataItemName="grn_projcode" dataType="8" dataLength="70" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+        <DI dataItemName="grn_projdesc" dataType="8" dataLength="150" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+        <DI dataItemName="item_codeml" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+        <DI dataItemName="itemdescriptionml" dataType="8" dataLength="150" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+        <DI dataItemName="line_no" dataType="3" dataLength="8" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="INTEGER" isModel="" baseArtifact="true" />
+        <DI dataItemName="modeflag" dataType="8" dataLength="1" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="s" bt_Type="CHAR" isModel="1" baseArtifact="true" />
+        <DI dataItemName="pendingqty" dataType="5" dataLength="28" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="NUMERIC" isModel="" baseArtifact="true" precision="4" />
+        <DI dataItemName="ppaltuom" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+        <DI dataItemName="receiptdateml" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="01/01/1900" bt_Type="DATE" isModel="" baseArtifact="true" />
+        <DI dataItemName="receiptlineno" dataType="3" dataLength="8" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="INTEGER" isModel="" baseArtifact="true" />
+        <DI dataItemName="receivedqty" dataType="5" dataLength="28" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="NUMERIC" isModel="" baseArtifact="true" precision="4" />
+        <DI dataItemName="recno" dataType="8" dataLength="18" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+        <DI dataItemName="refdoc_mlt" dataType="8" dataLength="18" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+        <DI dataItemName="refdoccreatedat" dataType="8" dataLength="256" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+        <DI dataItemName="refdoctype_mlt" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+        <DI dataItemName="rejctqtyml" dataType="5" dataLength="28" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="NUMERIC" isModel="" baseArtifact="true" precision="4" />
+        <DI dataItemName="resupplyqty" dataType="5" dataLength="28" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="NUMERIC" isModel="" baseArtifact="true" precision="4" />
+        <DI dataItemName="returnnoteqty" dataType="5" dataLength="28" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="NUMERIC" isModel="" baseArtifact="true" precision="4" />
+        <DI dataItemName="returnqty" dataType="5" dataLength="28" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="NUMERIC" isModel="" baseArtifact="true" precision="4" />
+        <DI dataItemName="returnrate" dataType="5" dataLength="28" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="NUMERIC" isModel="" baseArtifact="true" precision="4" />
+        <DI dataItemName="todatereturnnoteqty" dataType="5" dataLength="28" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="NUMERIC" isModel="" baseArtifact="true" precision="4" />
+        <DI dataItemName="unitrate" dataType="5" dataLength="28" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="NUMERIC" isModel="" baseArtifact="true" precision="4" />
+        <DI dataItemName="uommult" dataType="8" dataLength="15" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+        <DI dataItemName="variantno" dataType="8" dataLength="8" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="true" />
+    </SEG>
+</RvwService>

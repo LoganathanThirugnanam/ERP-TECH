@@ -1,0 +1,12 @@
+<RVWILBO ComponentName="TYPE_SETUP" ComponentDesc="Type Setup" ActivityName="typhlp" ActivityDesc="Help on Type Code" ILBOName="typhlpmain" ILBODesc="Help On Type Code" ILBOType="6" DefaultTabName="" PageNames="mainpage;" NoOfPages="1" AppStateControl="" InitService="" LinkPublished="true" FetchService="" ClientExtension="false" InlineTab="false" BaseArtifact="true">
+    <Page PageName="mainpage" NoOfControls="0" ControlNames="" NoOfNewControls="0" NewControlNames="" NoOfBaseControls="13" BaseControlNames="hdnclasscodeparameter;hdnguid;hdnsourceui;hdntextcontrol1;hdntextcontrol2;hdntimestamp;mltasn;txtclasscode;txtclassdesc;txtdescription;txteffdatefrom;txtexpdateto;txttypecode;" DisplayURL="" BaseArtifact="true" />
+    <Link ID="-483" BaseArtifact="false">
+        <PublisherData DataItemName="reason code" ControlName="mltasn" ViewName="1" ControlType="RSGrid" FlowDirection="1" BaseArtifact="false" />
+    </Link>
+    <VerInfo>
+        <Date>2024-03-08T06:55:39</Date>
+        <Author>Runtime</Author>
+        <ModelInfo>iEDK</ModelInfo>
+        <Version>2.2</Version>
+    </VerInfo>
+</RVWILBO>
