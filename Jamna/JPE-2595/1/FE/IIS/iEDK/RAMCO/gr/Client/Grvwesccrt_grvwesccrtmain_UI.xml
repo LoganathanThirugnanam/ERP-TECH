@@ -1,0 +1,13 @@
+﻿<ie>
+    <e t="ic" sn="grvwesccrtmain_mainscreen_section08">
+        <c rn="4" cn="1" w="100%" rseq="1">
+            <table id="_lnkviewbatchdetails" cellpadding="0" cellspacing="0" border="0" type="LINK" align="left">
+                <tr>
+                    <td nowrap="true">
+                        <a href="javascript:CallSubmitPage(&quot;grtvired1mainpgvwbatli&quot;)" class="forwardlink" tabindex="2">View Batch details</a>
+                    </td>
+                </tr>
+            </table>
+        </c>
+    </e>
+</ie>

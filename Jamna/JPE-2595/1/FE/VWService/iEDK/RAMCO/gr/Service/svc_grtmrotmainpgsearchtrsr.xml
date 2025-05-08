@@ -1,0 +1,87 @@
+<RvwService serviceName="grtmrotmainpgsearchtrsr" serviceType="0" inSegs="" outSegs="errordetails;mlsectref;" ioSegs="_hseg;" scSegs="" inSegCnt="0" outSegCnt="1" scSegCnt="0" psCnt="2" ioSegCnt="1" dataSegs="_hseg;mlsectref;" segCnt="2">
+    <PS sectionType="0" seqNo="6" controlExpressionEval="false" controlExpression="" loopingStyle="0" loopCausingSegment="" ceInstDepFlag="0" brsCnt="1" sectionName="hdrrefresh">
+        <BR seqNo="1" cSeqNo="0" executionMode="2" baseArtifact="false" isMethod="1" progID="" methodName="grtmrotsearchtrhdrref" integServiceName="" controlExpressionEval="false" controlExpression="" executionFlag="1" loopSegment="" modeFlagExpression="" methodID="0" accessesDatabase="1" systemGenerated="1" broName="" ceInstDepFlag="0" spName="grtmrotsearchtrhdrref" disable="false" operationType="0" spErrorProtocol="0" brppCnt="14" brlpCnt="0">
+            <PP physicalParameterName="ctxt_language" seqNo="1" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="language" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_ouinstance" seqNo="2" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="ouinstance" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_role" seqNo="3" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="role" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_service" seqNo="4" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="service" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_user" seqNo="5" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="user" spParameterType="CHAR" />
+            <PP physicalParameterName="_fromdate_hdr" seqNo="6" isCompoundParam="1" flowDirection="2" dataSegmentName="_hseg" dataItemName="_fromdate_hdr" spParameterType="DATE" />
+            <PP physicalParameterName="_itemcode" seqNo="7" isCompoundParam="1" flowDirection="2" dataSegmentName="_hseg" dataItemName="_itemcode" spParameterType="CHAR" />
+            <PP physicalParameterName="_itemdescription" seqNo="8" isCompoundParam="1" flowDirection="2" dataSegmentName="_hseg" dataItemName="_itemdescription" spParameterType="CHAR" />
+            <PP physicalParameterName="_purchaseorderno" seqNo="9" isCompoundParam="1" flowDirection="2" dataSegmentName="_hseg" dataItemName="_purchaseorderno" spParameterType="CHAR" />
+            <PP physicalParameterName="_suppliercode" seqNo="10" isCompoundParam="1" flowDirection="2" dataSegmentName="_hseg" dataItemName="_suppliercode" spParameterType="CHAR" />
+            <PP physicalParameterName="_suppliername" seqNo="11" isCompoundParam="1" flowDirection="2" dataSegmentName="_hseg" dataItemName="_suppliername" spParameterType="CHAR" />
+            <PP physicalParameterName="_todate" seqNo="12" isCompoundParam="1" flowDirection="2" dataSegmentName="_hseg" dataItemName="_todate" spParameterType="DATE" />
+            <PP physicalParameterName="_transactionno" seqNo="13" isCompoundParam="1" flowDirection="2" dataSegmentName="_hseg" dataItemName="_transactionno" spParameterType="CHAR" />
+            <PP physicalParameterName="_variantcode" seqNo="14" isCompoundParam="1" flowDirection="2" dataSegmentName="_hseg" dataItemName="_variantcode" spParameterType="CHAR" />
+        </BR>
+    </PS>
+    <PS sectionType="0" seqNo="7" controlExpressionEval="false" controlExpression="" loopingStyle="0" loopCausingSegment="" ceInstDepFlag="0" brsCnt="1" sectionName="mlrefresh">
+        <BR seqNo="1" cSeqNo="0" executionMode="2" baseArtifact="false" isMethod="1" progID="" methodName="grtmrotsearchtrmlmlsectref" integServiceName="" controlExpressionEval="false" controlExpression="" executionFlag="2" loopSegment="" modeFlagExpression="" methodID="0" accessesDatabase="1" systemGenerated="1" broName="" ceInstDepFlag="0" spName="grtmrotsearchtrmlmlsectref" disable="false" operationType="0" spErrorProtocol="0" brppCnt="15" brlpCnt="10">
+            <PP physicalParameterName="_fromdate_hdr" seqNo="1" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_fromdate_hdr" spParameterType="DATE" />
+            <PP physicalParameterName="_itemcode" seqNo="2" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_itemcode" spParameterType="CHAR" />
+            <PP physicalParameterName="_itemdescription" seqNo="3" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_itemdescription" spParameterType="CHAR" />
+            <PP physicalParameterName="_purchaseorderno" seqNo="4" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_purchaseorderno" spParameterType="CHAR" />
+            <PP physicalParameterName="_suppliercode" seqNo="5" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_suppliercode" spParameterType="CHAR" />
+            <PP physicalParameterName="_suppliername" seqNo="6" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_suppliername" spParameterType="CHAR" />
+            <PP physicalParameterName="_todate" seqNo="7" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_todate" spParameterType="DATE" />
+            <PP physicalParameterName="_transactionno" seqNo="8" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_transactionno" spParameterType="CHAR" />
+            <PP physicalParameterName="_variantcode" seqNo="9" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_variantcode" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_language" seqNo="10" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="language" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_ouinstance" seqNo="11" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="ouinstance" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_role" seqNo="12" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="role" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_service" seqNo="13" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="service" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_user" seqNo="14" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="user" spParameterType="CHAR" />
+            <PP physicalParameterName="rset001" seqNo="15" isCompoundParam="0" flowDirection="1" dataSegmentName="mlsectref" dataItemName="" />
+            <LP logicalParameterName="_help_itemcode_desc_rej_det" seqNo="9" dataSegmentName="mlsectref" dataItemName="_help_itemcode_desc_rej_det" />
+            <LP logicalParameterName="_help_itemcode_rej_det" seqNo="8" dataSegmentName="mlsectref" dataItemName="_help_itemcode_rej_det" />
+            <LP logicalParameterName="_help_purchase_rej_det" seqNo="5" dataSegmentName="mlsectref" dataItemName="_help_purchase_rej_det" />
+            <LP logicalParameterName="_help_supplier_name_rej_det" seqNo="7" dataSegmentName="mlsectref" dataItemName="_help_supplier_name_rej_det" />
+            <LP logicalParameterName="_help_supplier_rej_det" seqNo="6" dataSegmentName="mlsectref" dataItemName="_help_supplier_rej_det" />
+            <LP logicalParameterName="_help_tran_no_rej_det" seqNo="1" dataSegmentName="mlsectref" dataItemName="_help_tran_no_rej_det" />
+            <LP logicalParameterName="_help_variantcode_rej_det" seqNo="10" dataSegmentName="mlsectref" dataItemName="_help_variantcode_rej_det" />
+            <LP logicalParameterName="_status" seqNo="3" dataSegmentName="mlsectref" dataItemName="_status" />
+            <LP logicalParameterName="_testedby" seqNo="4" dataSegmentName="mlsectref" dataItemName="_testedby" />
+            <LP logicalParameterName="_trandate" seqNo="2" dataSegmentName="mlsectref" dataItemName="_trandate" />
+        </BR>
+    </PS>
+    <SEG segmentName="fw_context" seqNo="1" instanceFlag="0" flowDirection="2" mandatory="1" isPartOfHierarchy="1" segKeys="" diCnt="13" inDINames="" ioDINames="sectoken;component;service;ouinstance;componentinstance;" outDINames="transactionobject;user;language;txntime;txnid;txnoutcome;" scDINames="connectionstring;role;" diNames="sectoken;component;service;ouinstance;componentinstance;transactionobject;user;language;txntime;txnid;txnoutcome;connectionstring;role;" inDICnt="0" outDICnt="6" ioDICnt="5" scDICnt="2">
+        <DI dataItemName="transactionobject" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="user" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="language" dataType="3" dataLength="20" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="sectoken" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="component" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="service" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="ouinstance" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="componentinstance" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="txntime" dataType="8" dataLength="50" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="txnid" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="txnoutcome" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="connectionstring" dataType="8" dataLength="255" isPartOfKey="0" flowAttribute="3" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="0" />
+        <DI dataItemName="role" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="3" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="0" />
+    </SEG>
+    <SEG segmentName="_hseg" seqNo="1" instanceFlag="0" flowDirection="2" mandatory="0" isPartOfHierarchy="0" segKeys="" diCnt="9" inDINames="" ioDINames="_fromdate_hdr;_itemcode;_itemdescription;_purchaseorderno;_suppliercode;_suppliername;_todate;_transactionno;_variantcode;" outDINames="" scDINames="" diNames="_fromdate_hdr;_itemcode;_itemdescription;_purchaseorderno;_suppliercode;_suppliername;_todate;_transactionno;_variantcode;" inDICnt="0" outDICnt="0" ioDICnt="9" scDICnt="0" baseArtifact="false">
+        <DI dataItemName="_fromdate_hdr" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="1900-01-01" bt_Type="DATE" isModel="" baseArtifact="false" />
+        <DI dataItemName="_itemcode" dataType="8" dataLength="30" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_itemdescription" dataType="8" dataLength="255" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_purchaseorderno" dataType="8" dataLength="250" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_suppliercode" dataType="8" dataLength="255" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_suppliername" dataType="8" dataLength="255" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_todate" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="1900-01-01" bt_Type="DATE" isModel="" baseArtifact="false" />
+        <DI dataItemName="_transactionno" dataType="8" dataLength="250" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_variantcode" dataType="8" dataLength="8" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+    </SEG>
+    <SEG segmentName="mlsectref" seqNo="2" instanceFlag="1" flowDirection="1" mandatory="0" isPartOfHierarchy="1" segKeys="" diCnt="10" inDINames="" ioDINames="" outDINames="_help_itemcode_desc_rej_det;_help_itemcode_rej_det;_help_purchase_rej_det;_help_supplier_name_rej_det;_help_supplier_rej_det;_help_tran_no_rej_det;_help_variantcode_rej_det;_status;_testedby;_trandate;" scDINames="" diNames="_help_itemcode_desc_rej_det;_help_itemcode_rej_det;_help_purchase_rej_det;_help_supplier_name_rej_det;_help_supplier_rej_det;_help_tran_no_rej_det;_help_variantcode_rej_det;_status;_testedby;_trandate;" inDICnt="0" outDICnt="10" ioDICnt="0" scDICnt="0" baseArtifact="false">
+        <DI dataItemName="_help_itemcode_desc_rej_det" dataType="8" dataLength="250" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_help_itemcode_rej_det" dataType="8" dataLength="250" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_help_purchase_rej_det" dataType="8" dataLength="250" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_help_supplier_name_rej_det" dataType="8" dataLength="250" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_help_supplier_rej_det" dataType="8" dataLength="250" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_help_tran_no_rej_det" dataType="8" dataLength="250" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_help_variantcode_rej_det" dataType="8" dataLength="250" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_status" dataType="8" dataLength="25" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_testedby" dataType="8" dataLength="255" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_trandate" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="1900-01-01" bt_Type="DATE" isModel="" baseArtifact="false" />
+    </SEG>
+</RvwService>

@@ -1,0 +1,13 @@
+﻿<ie>
+    <e t="ic" sn="SECTION_[MAINSCREEN]_GRVWESCCRTMAIN_MAINSCREEN_SECTION08">
+        <c rn="4" cn="1" w="100%" rseq="1">
+            <td id="link_td_000" width="20%" align="left">
+                <table id="_lnkviewbatchdetails" name="_lnkviewbatchdetails" cellspacing="0" border="0" type="link">
+                    <tr>
+                        <td id="span__lnkviewbatchdetails" class="x-form-field x-form-field-link" style="display:none" nowrap="true" eventname="grtvired1mainpgvwbatli" onclick="PlfApplicationForm.HandleHyperLink('grtvired1mainpgvwbatli', 'HyperLink' , 0, '', 'grvwesccrt', 'grvwesccrtmain', '')" btsynonym="grtvired1mainpgvwbatli" type="link">View Batch details</td>
+                    </tr>
+                </table>
+            </td>
+        </c>
+    </e>
+</ie>

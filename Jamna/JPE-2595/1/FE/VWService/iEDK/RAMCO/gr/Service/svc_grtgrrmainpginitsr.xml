@@ -1,0 +1,208 @@
+<RvwService serviceName="grtgrrmainpginitsr" serviceType="0" inSegs="" outSegs="errordetails;aiclod;foldlod;rcflod;rftlod;stalod;" ioSegs="_hseg;" scSegs="" inSegCnt="0" outSegCnt="5" scSegCnt="0" psCnt="1" ioSegCnt="1" dataSegs="aiclod;foldlod;rcflod;rftlod;stalod;_hseg;" segCnt="6">
+    <PS sectionType="0" seqNo="1" controlExpressionEval="false" controlExpression="" loopingStyle="0" loopCausingSegment="" ceInstDepFlag="0" brsCnt="5" sectionName="cmbload">
+        <BR seqNo="1" cSeqNo="0" executionMode="2" baseArtifact="false" isMethod="1" progID="" methodName="grtgrrinhcmbaiclod" integServiceName="" controlExpressionEval="false" controlExpression="" executionFlag="2" loopSegment="" modeFlagExpression="" methodID="0" accessesDatabase="1" systemGenerated="1" broName="" ceInstDepFlag="0" spName="grtgrrinhcmbaiclod" disable="false" operationType="0" spErrorProtocol="0" brppCnt="27" brlpCnt="1">
+            <PP physicalParameterName="_desc" seqNo="1" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_desc" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_folder" seqNo="2" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_folder" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_name" seqNo="3" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_name" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_date_fr" seqNo="4" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_date_fr" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_date_to" seqNo="5" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_date_to" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_datefr" seqNo="6" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_datefr" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_dateto" seqNo="7" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_dateto" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_fold" seqNo="8" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_fold" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_itmcode" seqNo="9" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_itmcode" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_receiptfrom" seqNo="10" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_receiptfrom" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_receiptto" seqNo="11" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_receiptto" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_reffr" seqNo="12" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_reffr" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_refto" seqNo="13" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_refto" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_status" seqNo="14" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_status" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_type" seqNo="15" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_type" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_variant" seqNo="16" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_variant" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_supplier_code" seqNo="17" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_supplier_code" spParameterType="CHAR" />
+            <PP physicalParameterName="_guid" seqNo="18" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_guid" spParameterType="CHAR" />
+            <PP physicalParameterName="_hidden1" seqNo="19" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_hidden1" spParameterType="CHAR" />
+            <PP physicalParameterName="_hiddenou" seqNo="20" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_hiddenou" spParameterType="INTEGER" />
+            <PP physicalParameterName="_hiddentrantype" seqNo="21" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_hiddentrantype" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_language" seqNo="22" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="language" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_ouinstance" seqNo="23" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="ouinstance" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_role" seqNo="24" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="role" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_service" seqNo="25" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="service" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_user" seqNo="26" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="user" spParameterType="CHAR" />
+            <PP physicalParameterName="rset002" seqNo="27" isCompoundParam="0" flowDirection="1" dataSegmentName="aiclod" dataItemName="" />
+            <LP logicalParameterName="_gr_adhoc_ite" seqNo="1" dataSegmentName="aiclod" dataItemName="_gr_adhoc_ite" />
+        </BR>
+        <BR seqNo="2" cSeqNo="0" executionMode="2" baseArtifact="false" isMethod="1" progID="" methodName="grtgrrinhcmbfoldlod" integServiceName="" controlExpressionEval="false" controlExpression="" executionFlag="2" loopSegment="" modeFlagExpression="" methodID="0" accessesDatabase="1" systemGenerated="1" broName="" ceInstDepFlag="0" spName="grtgrrinhcmbfoldlod" disable="false" operationType="0" spErrorProtocol="0" brppCnt="27" brlpCnt="2">
+            <PP physicalParameterName="_desc" seqNo="1" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_desc" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_adhoc_ite" seqNo="2" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_adhoc_ite" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_name" seqNo="3" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_name" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_date_fr" seqNo="4" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_date_fr" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_date_to" seqNo="5" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_date_to" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_datefr" seqNo="6" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_datefr" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_dateto" seqNo="7" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_dateto" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_fold" seqNo="8" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_fold" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_itmcode" seqNo="9" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_itmcode" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_receiptfrom" seqNo="10" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_receiptfrom" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_receiptto" seqNo="11" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_receiptto" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_reffr" seqNo="12" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_reffr" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_refto" seqNo="13" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_refto" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_status" seqNo="14" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_status" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_type" seqNo="15" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_type" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_variant" seqNo="16" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_variant" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_supplier_code" seqNo="17" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_supplier_code" spParameterType="CHAR" />
+            <PP physicalParameterName="_guid" seqNo="18" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_guid" spParameterType="CHAR" />
+            <PP physicalParameterName="_hidden1" seqNo="19" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_hidden1" spParameterType="CHAR" />
+            <PP physicalParameterName="_hiddenou" seqNo="20" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_hiddenou" spParameterType="INTEGER" />
+            <PP physicalParameterName="_hiddentrantype" seqNo="21" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_hiddentrantype" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_language" seqNo="22" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="language" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_ouinstance" seqNo="23" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="ouinstance" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_role" seqNo="24" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="role" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_service" seqNo="25" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="service" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_user" seqNo="26" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="user" spParameterType="CHAR" />
+            <PP physicalParameterName="rset002" seqNo="27" isCompoundParam="0" flowDirection="1" dataSegmentName="foldlod" dataItemName="" />
+            <LP logicalParameterName="_gr_folder" seqNo="1" dataSegmentName="foldlod" dataItemName="_gr_folder" />
+        </BR>
+        <BR seqNo="3" cSeqNo="0" executionMode="2" baseArtifact="false" isMethod="1" progID="" methodName="grtgrrinhcmbrcflod" integServiceName="" controlExpressionEval="false" controlExpression="" executionFlag="2" loopSegment="" modeFlagExpression="" methodID="0" accessesDatabase="1" systemGenerated="1" broName="" ceInstDepFlag="0" spName="grtgrrinhcmbrcflod" disable="false" operationType="0" spErrorProtocol="0" brppCnt="27" brlpCnt="3">
+            <PP physicalParameterName="_desc" seqNo="1" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_desc" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_adhoc_ite" seqNo="2" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_adhoc_ite" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_folder" seqNo="3" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_folder" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_name" seqNo="4" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_name" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_date_fr" seqNo="5" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_date_fr" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_date_to" seqNo="6" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_date_to" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_datefr" seqNo="7" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_datefr" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_dateto" seqNo="8" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_dateto" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_itmcode" seqNo="9" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_itmcode" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_receiptfrom" seqNo="10" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_receiptfrom" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_receiptto" seqNo="11" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_receiptto" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_reffr" seqNo="12" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_reffr" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_refto" seqNo="13" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_refto" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_status" seqNo="14" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_status" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_type" seqNo="15" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_type" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_variant" seqNo="16" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_variant" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_supplier_code" seqNo="17" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_supplier_code" spParameterType="CHAR" />
+            <PP physicalParameterName="_guid" seqNo="18" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_guid" spParameterType="CHAR" />
+            <PP physicalParameterName="_hidden1" seqNo="19" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_hidden1" spParameterType="CHAR" />
+            <PP physicalParameterName="_hiddenou" seqNo="20" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_hiddenou" spParameterType="INTEGER" />
+            <PP physicalParameterName="_hiddentrantype" seqNo="21" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_hiddentrantype" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_language" seqNo="22" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="language" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_ouinstance" seqNo="23" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="ouinstance" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_role" seqNo="24" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="role" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_service" seqNo="25" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="service" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_user" seqNo="26" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="user" spParameterType="CHAR" />
+            <PP physicalParameterName="rset002" seqNo="27" isCompoundParam="0" flowDirection="1" dataSegmentName="rcflod" dataItemName="" />
+            <LP logicalParameterName="_gr_rev_fold" seqNo="1" dataSegmentName="rcflod" dataItemName="_gr_rev_fold" />
+        </BR>
+        <BR seqNo="4" cSeqNo="0" executionMode="2" baseArtifact="false" isMethod="1" progID="" methodName="grtgrrinhcmbstalod" integServiceName="" controlExpressionEval="false" controlExpression="" executionFlag="2" loopSegment="" modeFlagExpression="" methodID="0" accessesDatabase="1" systemGenerated="1" broName="" ceInstDepFlag="0" spName="grtgrrinhcmbstalod" disable="false" operationType="0" spErrorProtocol="0" brppCnt="27" brlpCnt="4">
+            <PP physicalParameterName="_desc" seqNo="1" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_desc" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_adhoc_ite" seqNo="2" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_adhoc_ite" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_folder" seqNo="3" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_folder" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_name" seqNo="4" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_name" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_date_fr" seqNo="5" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_date_fr" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_date_to" seqNo="6" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_date_to" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_datefr" seqNo="7" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_datefr" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_dateto" seqNo="8" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_dateto" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_fold" seqNo="9" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_fold" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_itmcode" seqNo="10" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_itmcode" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_receiptfrom" seqNo="11" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_receiptfrom" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_receiptto" seqNo="12" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_receiptto" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_reffr" seqNo="13" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_reffr" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_refto" seqNo="14" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_refto" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_type" seqNo="15" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_type" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_variant" seqNo="16" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_variant" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_supplier_code" seqNo="17" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_supplier_code" spParameterType="CHAR" />
+            <PP physicalParameterName="_guid" seqNo="18" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_guid" spParameterType="CHAR" />
+            <PP physicalParameterName="_hidden1" seqNo="19" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_hidden1" spParameterType="CHAR" />
+            <PP physicalParameterName="_hiddenou" seqNo="20" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_hiddenou" spParameterType="INTEGER" />
+            <PP physicalParameterName="_hiddentrantype" seqNo="21" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_hiddentrantype" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_language" seqNo="22" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="language" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_ouinstance" seqNo="23" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="ouinstance" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_role" seqNo="24" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="role" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_service" seqNo="25" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="service" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_user" seqNo="26" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="user" spParameterType="CHAR" />
+            <PP physicalParameterName="rset002" seqNo="27" isCompoundParam="0" flowDirection="1" dataSegmentName="stalod" dataItemName="" />
+            <LP logicalParameterName="_gr_rev_status" seqNo="1" dataSegmentName="stalod" dataItemName="_gr_rev_status" />
+        </BR>
+        <BR seqNo="5" cSeqNo="0" executionMode="2" baseArtifact="false" isMethod="1" progID="" methodName="grtgrrinhcmbrftlod" integServiceName="" controlExpressionEval="false" controlExpression="" executionFlag="2" loopSegment="" modeFlagExpression="" methodID="0" accessesDatabase="1" systemGenerated="1" broName="" ceInstDepFlag="0" spName="grtgrrinhcmbrftlod" disable="false" operationType="0" spErrorProtocol="0" brppCnt="27" brlpCnt="5">
+            <PP physicalParameterName="_desc" seqNo="1" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_desc" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_adhoc_ite" seqNo="2" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_adhoc_ite" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_folder" seqNo="3" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_folder" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_name" seqNo="4" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_name" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_date_fr" seqNo="5" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_date_fr" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_date_to" seqNo="6" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_date_to" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_datefr" seqNo="7" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_datefr" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_dateto" seqNo="8" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_dateto" spParameterType="DATE" />
+            <PP physicalParameterName="_gr_rev_fold" seqNo="9" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_fold" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_itmcode" seqNo="10" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_itmcode" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_receiptfrom" seqNo="11" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_receiptfrom" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_receiptto" seqNo="12" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_receiptto" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_reffr" seqNo="13" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_reffr" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_refto" seqNo="14" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_refto" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_status" seqNo="15" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_status" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_rev_variant" seqNo="16" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_rev_variant" spParameterType="CHAR" />
+            <PP physicalParameterName="_gr_supplier_code" seqNo="17" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_gr_supplier_code" spParameterType="CHAR" />
+            <PP physicalParameterName="_guid" seqNo="18" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_guid" spParameterType="CHAR" />
+            <PP physicalParameterName="_hidden1" seqNo="19" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_hidden1" spParameterType="CHAR" />
+            <PP physicalParameterName="_hiddenou" seqNo="20" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_hiddenou" spParameterType="INTEGER" />
+            <PP physicalParameterName="_hiddentrantype" seqNo="21" isCompoundParam="1" flowDirection="0" dataSegmentName="_hseg" dataItemName="_hiddentrantype" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_language" seqNo="22" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="language" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_ouinstance" seqNo="23" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="ouinstance" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_role" seqNo="24" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="role" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_service" seqNo="25" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="service" spParameterType="CHAR" />
+            <PP physicalParameterName="ctxt_user" seqNo="26" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="user" spParameterType="CHAR" />
+            <PP physicalParameterName="rset002" seqNo="27" isCompoundParam="0" flowDirection="1" dataSegmentName="rftlod" dataItemName="" />
+            <LP logicalParameterName="_gr_rev_type" seqNo="1" dataSegmentName="rftlod" dataItemName="_gr_rev_type" />
+        </BR>
+    </PS>
+    <SEG segmentName="fw_context" seqNo="1" instanceFlag="0" flowDirection="2" mandatory="1" isPartOfHierarchy="1" segKeys="" diCnt="13" inDINames="" ioDINames="sectoken;component;service;ouinstance;componentinstance;" outDINames="transactionobject;user;language;txntime;txnid;txnoutcome;" scDINames="connectionstring;role;" diNames="sectoken;component;service;ouinstance;componentinstance;transactionobject;user;language;txntime;txnid;txnoutcome;connectionstring;role;" inDICnt="0" outDICnt="6" ioDICnt="5" scDICnt="2">
+        <DI dataItemName="transactionobject" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="user" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="language" dataType="3" dataLength="20" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="sectoken" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="component" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="service" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="ouinstance" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="componentinstance" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="txntime" dataType="8" dataLength="50" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="txnid" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="txnoutcome" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="connectionstring" dataType="8" dataLength="255" isPartOfKey="0" flowAttribute="3" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="0" />
+        <DI dataItemName="role" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="3" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="0" />
+    </SEG>
+    <SEG segmentName="aiclod" seqNo="2" instanceFlag="1" flowDirection="1" mandatory="0" isPartOfHierarchy="1" segKeys="" diCnt="1" inDINames="" ioDINames="" outDINames="_gr_adhoc_ite;" scDINames="" diNames="_gr_adhoc_ite;" inDICnt="0" outDICnt="1" ioDICnt="0" scDICnt="0" baseArtifact="false">
+        <DI dataItemName="_gr_adhoc_ite" dataType="8" dataLength="25" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+    </SEG>
+    <SEG segmentName="foldlod" seqNo="3" instanceFlag="1" flowDirection="1" mandatory="0" isPartOfHierarchy="1" segKeys="" diCnt="1" inDINames="" ioDINames="" outDINames="_gr_folder;" scDINames="" diNames="_gr_folder;" inDICnt="0" outDICnt="1" ioDICnt="0" scDICnt="0" baseArtifact="false">
+        <DI dataItemName="_gr_folder" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+    </SEG>
+    <SEG segmentName="rcflod" seqNo="4" instanceFlag="1" flowDirection="1" mandatory="0" isPartOfHierarchy="1" segKeys="" diCnt="1" inDINames="" ioDINames="" outDINames="_gr_rev_fold;" scDINames="" diNames="_gr_rev_fold;" inDICnt="0" outDICnt="1" ioDICnt="0" scDICnt="0" baseArtifact="false">
+        <DI dataItemName="_gr_rev_fold" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+    </SEG>
+    <SEG segmentName="rftlod" seqNo="5" instanceFlag="1" flowDirection="1" mandatory="0" isPartOfHierarchy="1" segKeys="" diCnt="1" inDINames="" ioDINames="" outDINames="_gr_rev_type;" scDINames="" diNames="_gr_rev_type;" inDICnt="0" outDICnt="1" ioDICnt="0" scDICnt="0" baseArtifact="false">
+        <DI dataItemName="_gr_rev_type" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+    </SEG>
+    <SEG segmentName="stalod" seqNo="5" instanceFlag="1" flowDirection="1" mandatory="0" isPartOfHierarchy="1" segKeys="" diCnt="1" inDINames="" ioDINames="" outDINames="_gr_rev_status;" scDINames="" diNames="_gr_rev_status;" inDICnt="0" outDICnt="1" ioDICnt="0" scDICnt="0" baseArtifact="false">
+        <DI dataItemName="_gr_rev_status" dataType="8" dataLength="25" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+    </SEG>
+    <SEG segmentName="_hseg" seqNo="1" instanceFlag="0" flowDirection="2" mandatory="0" isPartOfHierarchy="0" segKeys="" diCnt="22" inDINames="" ioDINames="_desc;_gr_adhoc_ite;_gr_folder;_gr_name;_gr_rev_date_fr;_gr_rev_date_to;_gr_rev_datefr;_gr_rev_dateto;_gr_rev_fold;_gr_rev_itmcode;_gr_rev_receiptfrom;_gr_rev_receiptto;_gr_rev_reffr;_gr_rev_refto;_gr_rev_status;_gr_rev_type;_gr_rev_variant;_gr_supplier_code;_guid;_hidden1;_hiddenou;_hiddentrantype;" outDINames="" scDINames="" diNames="_desc;_gr_adhoc_ite;_gr_folder;_gr_name;_gr_rev_date_fr;_gr_rev_date_to;_gr_rev_datefr;_gr_rev_dateto;_gr_rev_fold;_gr_rev_itmcode;_gr_rev_receiptfrom;_gr_rev_receiptto;_gr_rev_reffr;_gr_rev_refto;_gr_rev_status;_gr_rev_type;_gr_rev_variant;_gr_supplier_code;_guid;_hidden1;_hiddenou;_hiddentrantype;" inDICnt="0" outDICnt="0" ioDICnt="22" scDICnt="0" baseArtifact="false">
+        <DI dataItemName="_desc" dataType="8" dataLength="150" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_adhoc_ite" dataType="8" dataLength="25" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_folder" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_name" dataType="8" dataLength="60" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_rev_date_fr" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="1900-01-01" bt_Type="DATE" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_rev_date_to" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="1900-01-01" bt_Type="DATE" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_rev_datefr" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="1900-01-01" bt_Type="DATE" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_rev_dateto" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="1900-01-01" bt_Type="DATE" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_rev_fold" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_rev_itmcode" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_rev_receiptfrom" dataType="8" dataLength="70" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_rev_receiptto" dataType="8" dataLength="70" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_rev_reffr" dataType="8" dataLength="70" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_rev_refto" dataType="8" dataLength="70" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_rev_status" dataType="8" dataLength="25" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_rev_type" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_rev_variant" dataType="8" dataLength="8" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_gr_supplier_code" dataType="8" dataLength="18" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_guid" dataType="8" dataLength="128" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_hidden1" dataType="8" dataLength="500" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+        <DI dataItemName="_hiddenou" dataType="3" dataLength="4" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="-915" bt_Type="INTEGER" isModel="" baseArtifact="false" />
+        <DI dataItemName="_hiddentrantype" dataType="8" dataLength="255" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="CHAR" isModel="" baseArtifact="false" />
+    </SEG>
+</RvwService>

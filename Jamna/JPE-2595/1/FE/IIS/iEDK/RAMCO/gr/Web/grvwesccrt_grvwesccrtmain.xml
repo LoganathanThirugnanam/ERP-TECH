@@ -1,0 +1,20 @@
+<RVWILBO ComponentName="GR" ComponentDesc="Receipt Acknowledgement" ActivityName="grvwesccrt" ActivityDesc="View Receipt Document" ILBOName="grvwesccrtmain" ILBODesc="View Receipt Document" ILBOType="8" DefaultTabName="" PageNames="mainpage;" NoOfPages="1" AppStateControl="" InitService="" LinkPublished="true" FetchService="" ClientExtension="true" InlineTab="false" BaseArtifact="true">
+    <Page PageName="mainpage" NoOfControls="0" ControlNames="" NoOfNewControls="0" NewControlNames="" NoOfBaseControls="93" BaseControlNames="creditnoteno;dspaddln_info_vew;dspaddressdet_vw;dspcarriernm;dspcls_desc_vwrecmain;dspcls_vwrecmain;dspgross_weight;dsplr_date;dsplr_no;dspowntaxregion;dsppay_term_desc_vew;dsppay_term_vew;dspprojectcode1;dspprojectdescription1;dspprojectou1;dspreason_for_return;dspref_docmlt;dspreversal_date;dspsubcls_decc_vwrecmain;dspsubcls_vwrecmain;dspsupp_inv_date_vwgr;dspsupp_inv_no_vwgr;dspsuppliertaxregion;dsptareweight;dsptaxregnno;dsptotalvalue;dspvessel_flght_code;dspvessel_flght_name;dspvgrlcexpirydate;dspvgrlcno;dspvgrrefid;dspvoyage_flght_id;hdnguid;hdnhdn_is_vwmode;hdnhdnrt_stcontrol;hdnhdntranou;hdnhdntrantype;hdnhidden_vrgr1;hdnhidden_vrgr2;hdnhidden_vrgr3;hdnposcohdn_hid;hdnpubsub1;hdnpubsub2;hdnpubsub3;hdntextcontrol1;hdntextcontrol2;hdntimestamp2;hdnview_dockey;mlblanketscolinedetl;posco_hdnlink;txtamndtno;txtautoinvoicing;txtcarriername;txtcontactperson;txtcreatedat;txtcreatedby;txtcreateddate;txtcsou;txtdate;txtdelynotedate;txtdelynoteno;txtemployeecode;txtentryno;txtfreezereceiptdate;txtfrlevel;txtgatepassdate;txtgatepassno;txtlinestatuscmb;txtmodby;txtmoddate;txtmodeoftpt;txtname;txtnoofpackages;txtpregrinvoice;txtreceiptdate;txtreceiptfolder;txtreceiptno;txtrefdoc;txtrefdocfolder;txtreferreddoc;txtreferreddoclineno;txtreferreddocno;txtremarks;txtshippedfrom;txtstatus;txtsuppliercode;txttotalweight;txttrefdocdate;txttype;txtunloadingdocno;txtuom;txtvehicleno;wf_status_datahyp;" DisplayURL="" BaseArtifact="true">
+        <LayoutControl ControlType="RSLink" ControlName="_lnkviewbatchdetails" BaseArtifact="false" />
+    </Page>
+    <Task Name="grtvired1mainpgvwbatli" Type="LINK" TaskDesc="View Batch details" ReportName="" RCTaskData="" RMTaskData="txtreceiptno;" DirtyTabs="" ServiceName="" LinkID="-109" PostHelpTask="" PostLinkTask="" DataSavingTask="0" BaseArtifact="false" />
+    <Link ID="-109" BaseArtifact="false">
+        <SubscriberLink ParentComponentName="gr" ParentActivityName="grvwesccrt" ParentILBOName="grvwesccrtmain" ChildComponentName="gr" ChildActivityName="viewbatchscr" ChildILBOName="viewbatchscr" ChildActivityExtentionType="2" BaseArtifact="false">
+            <SubscriberData DataItemName="gr no" FlowDirection="0" RetrieveMultiple="0" ILBOName="viewbatchscr" ControlName="txtreceiptno" ViewName="txtreceiptno" VariableName="" BaseArtifact="false" />
+        </SubscriberLink>
+    </Link>
+    <Link ID="-482" BaseArtifact="false">
+        <PublisherData DataItemName="receipt no." ControlName="hdnpubsub3" ViewName="hdnpubsub3" ControlType="RSEdit" FlowDirection="0" BaseArtifact="false" />
+    </Link>
+    <VerInfo>
+        <Date>2024-03-08T06:52:08</Date>
+        <Author>Runtime</Author>
+        <ModelInfo>iEDK</ModelInfo>
+        <Version>2.2</Version>
+    </VerInfo>
+</RVWILBO>

@@ -1,0 +1,307 @@
+﻿<HTML>
+    <head>
+        <meta name="ilbo type" content="1" />
+        <meta name="Activity Name" content="Grreversal" />
+        <meta name="Activity Description" content="GR Reversal" />
+        <meta name="ILBO Name" content="grreversal" />
+        <meta name="ILBO Description" content="GR Status Change" />
+        <meta name="Tasks" content="GRTGRRMAINPGCSSTR~Confirm Status Change:Trans,GRTGRRMAINPGDEFFETCH~Default Fetch Task For the ILBO GRReversal:Fetch,GRTGRRMAINPGGRREVMREACODHE~Help Task For the Grid Control _grdGR_revmldetails - Column Name - _Gr_reason_code:Help,GRTGRRMAINPGGRREVMREACODUI~UI Task For the Grid Control _grdGR_revmldetails - Column Name - _Gr_reason_code:UI,GRTGRRMAINPGGRREVMRECNOLI~Databased Hyper Link - For the GridControl _grdGR_revmldetails - Column Name - _Gr_receipt_no:Link,GRTGRRMAINPGINIT~Initalize Task For the ILBO GRReversal:initialize,GRTGRRMAINPGMLDRECNOLI~Databased Hyper Link - For the GridControl _grdmldetails - Column Name - _ReceiptNo:Link,GRTGRRMAINPGSEARTR~Search:Trans," />
+        <script language="javascript" type="text/javascript">rootPath='../../../../';</script>
+        <script language="javascript" type="text/javascript" src="../../../../ilrt/ILRTCore.js"> </script>
+        <script language="javascript" type="text/javascript" src="../../../../ilrt/ILRTCrypt.js"> </script>
+        <script language="javascript" type="text/javascript" src="Grreversal_grreversal_user.js"> </script>
+        <link rel="StyleSheet" type="text/css" href="../../../../Themes/RSGlobalStyles/RSGlobalStyles.css" />
+    </head>
+    <body class="generalbodycolor" onload="initializeScreen('RSGlobalStyles')">
+        <form autocomplete="on" method="post" action="RVWForm" name="RVWForm">
+            <table id="RSHeaderTrialBar" name="RSHeaderTrialBar" width="100%">
+                <tr />
+            </table>
+            <table id="lbltitle1" width="100%" cellpadding="0" cellspacing="0" type="label">
+                <tr>
+                    <td width="100%" class="heading1" align="center" valign="top">GR Status Change</td>
+                </tr>
+            </table>
+            <table id="HIGHLEVELSECTION" width="100%" cellpadding="0" cellspacing="0" valign="top">
+                <tr>
+                    <td valign="top">
+                        <table id="_headersection" class="visiblesectiongridwithnoborder" width="100%" cellpadding="0" cellspacing="0" valign="top" caption="Search Criteria" type="section" sborder="1" stitle="1" sstyle="1">
+                            <tr>
+                                <td width="16%">
+                                    <table id="lbl_txt_gr_rev_receiptfrom" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Receipt No.From</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <input id="_txt_gr_rev_receiptfrom" name="_txt_gr_rev_receiptfrom" datatype="char" maxlength="70" decimallength="0" class="characterfield" tabindex="1" />
+                                </td>
+                                <td width="16%">
+                                    <table id="lbl_txt_gr_rev_receiptto" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Receipt No.To</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <input id="_txt_gr_rev_receiptto" name="_txt_gr_rev_receiptto" datatype="char" maxlength="70" decimallength="0" class="characterfield" tabindex="2" />
+                                </td>
+                                <td width="16%">
+                                    <table id="lbl_cmb_gr_rev_status" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Status</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <select id="_cmb_gr_rev_status" name="_cmb_gr_rev_status" datatype="char" tabindex="3" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="16%">
+                                    <table id="lbl_txt_gr_rev_datefr" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Receipt Date From</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <input id="_txt_gr_rev_datefr" name="_txt_gr_rev_datefr" datatype="date" maxlength="10" decimallength="0" tabindex="4" />
+                                </td>
+                                <td width="16%">
+                                    <table id="lbl_txt_gr_rev_dateto" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">ReceiptDateTo</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <input id="_txt_gr_rev_dateto" name="_txt_gr_rev_dateto" datatype="date" maxlength="10" decimallength="0" tabindex="5" />
+                                </td>
+                                <td width="16%">
+                                    <table id="lbl_cmb_gr_folder" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Folder</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <select id="_cmb_gr_folder" name="_cmb_gr_folder" datatype="char" tabindex="6" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="16%">
+                                    <table id="lbl_txt_gr_supplier_code" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Supplier/Customer Code</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <input id="_txt_gr_supplier_code" name="_txt_gr_supplier_code" datatype="char" maxlength="18" decimallength="0" class="characterfield" tabindex="7" />
+                                </td>
+                                <td width="16%">
+                                    <table id="lbl_txt_gr_name" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Name</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <input id="_txt_gr_name" name="_txt_gr_name" datatype="char" maxlength="60" decimallength="0" class="characterfield" tabindex="8" />
+                                </td>
+                                <td width="16%">
+                                    <table id="lbl_cmb_gr_adhoc_ite" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Adhoc Item Class</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <select id="_cmb_gr_adhoc_ite" name="_cmb_gr_adhoc_ite" datatype="char" tabindex="9" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="16%">
+                                    <table id="lbl_txt_gr_rev_reffr" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Ref.Doc.No.From</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <input id="_txt_gr_rev_reffr" name="_txt_gr_rev_reffr" datatype="char" maxlength="70" decimallength="0" class="characterfield" tabindex="10" />
+                                </td>
+                                <td width="16%">
+                                    <table id="lbl_txt_gr_rev_refto" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Ref.Doc.No.To</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <input id="_txt_gr_rev_refto" name="_txt_gr_rev_refto" datatype="char" maxlength="70" decimallength="0" class="characterfield" tabindex="11" />
+                                </td>
+                                <td width="16%">
+                                    <table id="lbl_cmb_gr_rev_type" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Ref.Doc.Type</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <select id="_cmb_gr_rev_type" name="_cmb_gr_rev_type" datatype="char" tabindex="12" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="16%">
+                                    <table id="lbl_txt_gr_rev_date_fr" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Ref.Doc.Date.From</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <input id="_txt_gr_rev_date_fr" name="_txt_gr_rev_date_fr" datatype="date" maxlength="10" decimallength="0" tabindex="13" />
+                                </td>
+                                <td width="16%">
+                                    <table id="lbl_txt_gr_rev_date_to" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Ref.Doc.Date.To</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <input id="_txt_gr_rev_date_to" name="_txt_gr_rev_date_to" datatype="date" maxlength="10" decimallength="0" tabindex="14" />
+                                </td>
+                                <td width="16%">
+                                    <table id="lbl_cmb_gr_rev_fold" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Ref.Doc.Folder</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <select id="_cmb_gr_rev_fold" name="_cmb_gr_rev_fold" datatype="char" tabindex="15" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="16%">
+                                    <table id="lbl_txt_gr_rev_itmcode" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Item Code</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <input id="_txt_gr_rev_itmcode" name="_txt_gr_rev_itmcode" datatype="char" maxlength="32" decimallength="0" class="characterfield" tabindex="16" />
+                                </td>
+                                <td width="16%">
+                                    <table id="lbl_txt_gr_rev_variant" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Variant Code</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <input id="_txt_gr_rev_variant" name="_txt_gr_rev_variant" datatype="char" maxlength="8" decimallength="0" class="characterfield" tabindex="17" />
+                                </td>
+                                <td width="16%">
+                                    <table id="lbl_txt_desc" width="100%" cellpadding="0" cellspacing="0" type="label">
+                                        <tr>
+                                            <td class="labelsleft">Desc</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="16%">
+                                    <input id="_txt_desc" name="_txt_desc" datatype="char" maxlength="150" decimallength="0" class="characterfield" tabindex="18" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="16%" />
+                                <td width="16%" />
+                                <td width="16%">
+                                    <table id="_btngr_search" cellpadding="0" cellspacing="0" border="0" type="TRANS" align="center" width="66px">
+                                        <tr>
+                                            <td class="labels" nowrap="true">
+                                                <a href="javascript:CallSubmitPage(&quot;grtgrrmainpgseartr&quot;)" class="transtask" tabindex="21">Search</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <table id="_searchresults" class="visiblesectiongridwithnoborder" width="100%" cellpadding="0" cellspacing="0" valign="top" caption="Search Results" type="section" sborder="1" stitle="1" sstyle="1">
+                            <tr>
+                                <td width="100%">
+                                    <table id="_grdgr_revmldetails" width="960px" cellpadding="0" cellspacing="0" border="0" type="enterable" selectflag="true" deleteflag="true" renderrows="y" zoom="true" class="GridColor" align="LEFT" tabindex="22">
+                                        <tr>
+                                            <th colheading="Receipt No." class="GridHeading" datacolumn="Y" datalength="70" maxlength="70" width="132px" title="Receipt No." viewname="14" tdclass="gridcelltextfield1" ctrlclass="MLDBForwardLink" ctrlhref="grtgrrmainpggrrevmrecnoli" associatedtask="grtgrrmainpggrrevmrecnoli" rtdisabled="grtgrrmainpggrrevmrecnoli" datatype="char" htmldomctrl="a">Receipt No.</th>
+                                            <th colheading="Date" class="GridHeading" datacolumn="Y" datalength="10" maxlength="10" width="48px" title="Date" viewname="2" tdclass="griddisplayonly" ctrlclass="griddisplayonly" datatype="date" htmldomctrl="td">Date</th>
+                                            <th colheading="Folder" class="GridHeading" datacolumn="Y" datalength="40" maxlength="40" width="72px" title="Folder" viewname="3" tdclass="griddisplayonly" ctrlclass="griddisplayonly" datatype="char" htmldomctrl="td">Folder</th>
+                                            <th colheading="Type" class="GridHeading" datacolumn="Y" datalength="25" maxlength="25" width="48px" title="Type" viewname="4" tdclass="griddisplayonly" ctrlclass="griddisplayonly" datatype="char" htmldomctrl="td">Type</th>
+                                            <th colheading="Status" class="GridHeading" datacolumn="Y" datalength="25" maxlength="25" width="72px" title="Status" viewname="5" tdclass="griddisplayonly" ctrlclass="griddisplayonly" datatype="char" htmldomctrl="td">Status</th>
+                                            <th colheading="Reference Document" class="GridHeading" datacolumn="Y" datalength="18" maxlength="18" width="216px" title="Reference Document" viewname="6" tdclass="griddisplayonly" ctrlclass="griddisplayonly" datatype="char" htmldomctrl="td">Reference Document</th>
+                                            <th colheading="Supplier/Customer Code" class="GridHeading" datacolumn="Y" datalength="70" maxlength="70" width="264px" title="Supplier/Customer Code" viewname="7" tdclass="griddisplayonly" ctrlclass="griddisplayonly" datatype="char" htmldomctrl="td">Supplier/Customer Code</th>
+                                            <th colheading="Name" class="GridHeading" datacolumn="Y" datalength="60" maxlength="60" width="48px" title="Name" viewname="8" tdclass="griddisplayonly" ctrlclass="griddisplayonly" datatype="char" htmldomctrl="td">Name</th>
+                                            <th colheading="Reason Code" class="GridHeading" datacolumn="Y" datalength="128" maxlength="128" width="132px" title="Reason Code" viewname="13" ctrltype="text" tdclass="gridcelltextfield1" ctrlclass="gridcelltextfield1" ctrlhref="grtgrrmainpggrrevmreacodui" associatedtask="grtgrrmainpggrrevmreacodui" rtdisabled="grtgrrmainpggrrevmreacodui" datatype="char" htmldomctrl="input">Reason Code<a href="javascript:CHHandler(&quot;grtgrrmainpggrrevmreacodhe&quot;, &quot;_grdgr_revmldetails&quot;)" class="ForwardLink" tabindex="0"><img border="0" src="../../../Themes/RSGlobalStyles/images/datahelp.gif" title="Reason Code" /></a></th>
+                                            <th colheading="Description" class="GridHeading" datacolumn="Y" datalength="150" maxlength="150" width="132px" title="Description" viewname="10" tdclass="griddisplayonly" ctrlclass="griddisplayonly" datatype="char" htmldomctrl="td">Description</th>
+                                            <th colheading="Reversal Date" class="GridHeading" datacolumn="Y" datalength="10" maxlength="10" width="156px" title="Reversal Date" viewname="15" ctrltype="text" tdclass="gridcelltextfield1" ctrlclass="gridcelltextfield1" datatype="date" htmldomctrl="input">Reversal Date</th>
+                                            <th colheading="Remarks" class="GridHeading" datacolumn="Y" datalength="250" maxlength="250" width="84px" title="Remarks" viewname="12" ctrltype="text" tdclass="gridcelltextfield1" ctrlclass="gridcelltextfield1" datatype="char" htmldomctrl="input">Remarks</th>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <table id="_buttonsection" class="visiblesectiongridwithnoborder" width="100%" cellpadding="0" cellspacing="0" valign="top" caption="Button Section" type="section" sstyle="1">
+                            <tr>
+                                <td width="50%" />
+                                <td width="50%">
+                                    <table id="_btnconfirmstatuschange" cellpadding="0" cellspacing="0" border="0" type="TRANS" align="center" width="200px">
+                                        <tr>
+                                            <td class="labels" nowrap="true">
+                                                <a href="javascript:CallSubmitPage(&quot;grtgrrmainpgcsstr&quot;)" class="transtask" tabindex="24">Confirm Status Change</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="50%" />
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <table id="_hiddensection" class="visiblesectiongridwithnoborder" width="100%" cellpadding="0" cellspacing="0" valign="top" caption="Hidden section" style="display:none;">
+                            <tr>
+                                <td width="16%">
+                                    <input id="_txt_hidden1" name="_txt_hidden1" datatype="char" maxlength="500" decimallength="0" class="characterfield" tabindex="26" type="hidden" />
+                                </td>
+                                <td width="16%">
+                                    <input id="_txt_hiddenou" name="_txt_hiddenou" datatype="integer" maxlength="4" decimallength="0" class="numericfield" tabindex="27" type="hidden" />
+                                </td>
+                                <td width="16%">
+                                    <input id="_txt_hiddentrantype" name="_txt_hiddentrantype" datatype="char" maxlength="255" decimallength="0" class="characterfield" tabindex="28" type="hidden" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="16%">
+                                    <input id="_txt_guid" name="_txt_guid" datatype="char" maxlength="128" decimallength="0" class="characterfield" tabindex="29" type="hidden" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</HTML>

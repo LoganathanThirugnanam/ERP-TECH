@@ -1,0 +1,357 @@
+<RVWILBO ComponentName="GR" ComponentDesc="Receipt Acknowledgement" ActivityName="grreversal" ActivityDesc="GR Reversal" ILBOName="grreversal" ILBODesc="GR Status Change" ILBOType="2" DefaultTabName="" PageNames="mainpage;" NoOfPages="1" AppStateControl="" InitService="grtgrrmainpginitsr" LinkPublished="false" FetchService="grtgrrmainpgdeffetchsr" ClientExtension="false" InlineTab="true" BaseArtifact="false">
+    <Page PageName="mainpage" NoOfControls="23" ControlNames="_cmb_gr_adhoc_ite;_cmb_gr_folder;_cmb_gr_rev_fold;_cmb_gr_rev_status;_cmb_gr_rev_type;_grdgr_revmldetails;_txt_desc;_txt_gr_name;_txt_gr_rev_date_fr;_txt_gr_rev_date_to;_txt_gr_rev_datefr;_txt_gr_rev_dateto;_txt_gr_rev_itmcode;_txt_gr_rev_receiptfrom;_txt_gr_rev_receiptto;_txt_gr_rev_reffr;_txt_gr_rev_refto;_txt_gr_rev_variant;_txt_gr_supplier_code;_txt_guid;_txt_hidden1;_txt_hiddenou;_txt_hiddentrantype;" NoOfNewControls="23" NewControlNames="_cmb_gr_adhoc_ite;_cmb_gr_folder;_cmb_gr_rev_fold;_cmb_gr_rev_status;_cmb_gr_rev_type;_grdgr_revmldetails;_txt_desc;_txt_gr_name;_txt_gr_rev_date_fr;_txt_gr_rev_date_to;_txt_gr_rev_datefr;_txt_gr_rev_dateto;_txt_gr_rev_itmcode;_txt_gr_rev_receiptfrom;_txt_gr_rev_receiptto;_txt_gr_rev_reffr;_txt_gr_rev_refto;_txt_gr_rev_variant;_txt_gr_supplier_code;_txt_guid;_txt_hidden1;_txt_hiddenou;_txt_hiddentrantype;" NoOfBaseControls="0" BaseControlNames="" DisplayURL="" BaseArtifact="false">
+        <LayoutControl ControlType="RSButton" ControlName="_btnconfirmstatuschange" BaseArtifact="false" />
+        <LayoutControl ControlType="RSButton" ControlName="_btngr_search" BaseArtifact="false" />
+        <LayoutControl ControlType="Section" ControlName="_buttonsection" BaseArtifact="false" />
+        <LayoutControl ControlType="Section" ControlName="_headersection" BaseArtifact="false" />
+        <LayoutControl ControlType="Section" ControlName="_hiddensection" BaseArtifact="false" />
+        <LayoutControl ControlType="Section" ControlName="_searchresults" BaseArtifact="false" />
+        <Control ControlName="_cmb_gr_adhoc_ite" ControlType="RSCombo" BaseArtifact="false">
+            <ViewInfo ViewName="_cmb_gr_adhoc_ite" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_cmb_gr_folder" ControlType="RSCombo" BaseArtifact="false">
+            <ViewInfo ViewName="_cmb_gr_folder" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_cmb_gr_rev_fold" ControlType="RSCombo" BaseArtifact="false">
+            <ViewInfo ViewName="_cmb_gr_rev_fold" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_cmb_gr_rev_status" ControlType="RSCombo" BaseArtifact="false">
+            <ViewInfo ViewName="_cmb_gr_rev_status" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_cmb_gr_rev_type" ControlType="RSCombo" BaseArtifact="false">
+            <ViewInfo ViewName="_cmb_gr_rev_type" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_grdgr_revmldetails" ControlType="RSGrid" RowCount="10" BaseArtifact="false">
+            <ViewInfo ViewName="4" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+            <ViewInfo ViewName="12" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+            <ViewInfo ViewName="14" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+            <ViewInfo ViewName="5" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+            <ViewInfo ViewName="3" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+            <ViewInfo ViewName="13" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+            <ViewInfo ViewName="8" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+            <ViewInfo ViewName="10" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+            <ViewInfo ViewName="6" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+            <ViewInfo ViewName="7" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+            <ViewInfo ViewName="15" Visible="true" DataType="date" HelpView="" PrecisionValue="" BaseArtifact="false" />
+            <ViewInfo ViewName="2" Visible="true" DataType="date" HelpView="" PrecisionValue="" BaseArtifact="false" />
+            <ColumnProperty ViewName="10" ViewType="displayonly" LinkedView="" BaseArtifact="false" />
+            <ColumnProperty ViewName="12" ViewType="editbox" LinkedView="" BaseArtifact="false" />
+            <ColumnProperty ViewName="13" ViewType="editbox" LinkedView="" BaseArtifact="false" />
+            <ColumnProperty ViewName="14" ViewType="displayonly" LinkedView="" BaseArtifact="false" />
+            <ColumnProperty ViewName="15" ViewType="editbox" LinkedView="" BaseArtifact="false" />
+            <ColumnProperty ViewName="2" ViewType="displayonly" LinkedView="" BaseArtifact="false" />
+            <ColumnProperty ViewName="3" ViewType="displayonly" LinkedView="" BaseArtifact="false" />
+            <ColumnProperty ViewName="4" ViewType="displayonly" LinkedView="" BaseArtifact="false" />
+            <ColumnProperty ViewName="5" ViewType="displayonly" LinkedView="" BaseArtifact="false" />
+            <ColumnProperty ViewName="6" ViewType="displayonly" LinkedView="" BaseArtifact="false" />
+            <ColumnProperty ViewName="7" ViewType="displayonly" LinkedView="" BaseArtifact="false" />
+            <ColumnProperty ViewName="8" ViewType="displayonly" LinkedView="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_desc" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_desc" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_gr_name" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_gr_name" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_gr_rev_date_fr" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_gr_rev_date_fr" Visible="true" DataType="date" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_gr_rev_date_to" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_gr_rev_date_to" Visible="true" DataType="date" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_gr_rev_datefr" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_gr_rev_datefr" Visible="true" DataType="date" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_gr_rev_dateto" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_gr_rev_dateto" Visible="true" DataType="date" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_gr_rev_itmcode" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_gr_rev_itmcode" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_gr_rev_receiptfrom" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_gr_rev_receiptfrom" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_gr_rev_receiptto" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_gr_rev_receiptto" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_gr_rev_reffr" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_gr_rev_reffr" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_gr_rev_refto" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_gr_rev_refto" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_gr_rev_variant" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_gr_rev_variant" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_gr_supplier_code" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_gr_supplier_code" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_guid" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_guid" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_hidden1" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_hidden1" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_hiddenou" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_hiddenou" Visible="true" DataType="integer" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+        <Control ControlName="_txt_hiddentrantype" ControlType="RSEdit" BaseArtifact="false">
+            <ViewInfo ViewName="_txt_hiddentrantype" Visible="true" DataType="char" HelpView="" PrecisionValue="" BaseArtifact="false" />
+        </Control>
+    </Page>
+    <Task Name="grtgrrmainpgcsstr" Type="TRANS" TaskDesc="Confirm Status Change" ReportName="" RCTaskData="" RMTaskData="_cmb_gr_adhoc_ite;_cmb_gr_folder;_cmb_gr_rev_fold;_cmb_gr_rev_status;_cmb_gr_rev_type;_txt_desc;_txt_gr_name;_txt_gr_rev_date_fr;_txt_gr_rev_date_to;_txt_gr_rev_datefr;_txt_gr_rev_dateto;_txt_gr_rev_itmcode;_txt_gr_rev_receiptfrom;_txt_gr_rev_receiptto;_txt_gr_rev_reffr;_txt_gr_rev_refto;_txt_gr_rev_variant;_txt_gr_supplier_code;_txt_guid;_txt_hidden1;_txt_hiddenou;_txt_hiddentrantype;_grdgr_revmldetails;" DirtyTabs="" ServiceName="grtgrrmainpgcsstrsr" LinkID="" PostHelpTask="" PostLinkTask="" DataSavingTask="0" BaseArtifact="false" />
+    <Task Name="grtgrrmainpgdeffetch" Type="FETCH" TaskDesc="Default Fetch Task For the ILBO GRReversal" ReportName="" RCTaskData="" RMTaskData="_cmb_gr_adhoc_ite;_cmb_gr_folder;_cmb_gr_rev_fold;_cmb_gr_rev_status;_cmb_gr_rev_type;_txt_desc;_txt_gr_name;_txt_gr_rev_date_fr;_txt_gr_rev_date_to;_txt_gr_rev_datefr;_txt_gr_rev_dateto;_txt_gr_rev_itmcode;_txt_gr_rev_receiptfrom;_txt_gr_rev_receiptto;_txt_gr_rev_reffr;_txt_gr_rev_refto;_txt_gr_rev_variant;_txt_gr_supplier_code;_txt_guid;_txt_hidden1;_txt_hiddenou;_txt_hiddentrantype;_grdgr_revmldetails;" DirtyTabs="" ServiceName="grtgrrmainpgdeffetchsr" LinkID="" PostHelpTask="" PostLinkTask="" DataSavingTask="0" BaseArtifact="false" />
+    <Task Name="grtgrrmainpggrrevmreacodhe" Type="HELP" TaskDesc="Help Task For the Grid Control _grdGR_revmldetails - Column Name - _Gr_reason_code" ReportName="" RCTaskData="" RMTaskData="_grdgr_revmldetails;" DirtyTabs="" ServiceName="" LinkID="-483" PostHelpTask="" PostLinkTask="" DataSavingTask="0" BaseArtifact="false" />
+    <Task Name="grtgrrmainpggrrevmreacodui" Type="UI" TaskDesc="UI Task For the Grid Control _grdGR_revmldetails - Column Name - _Gr_reason_code" ReportName="" RCTaskData="" RMTaskData="_cmb_gr_adhoc_ite;_cmb_gr_folder;_cmb_gr_rev_fold;_cmb_gr_rev_status;_cmb_gr_rev_type;_txt_desc;_txt_gr_name;_txt_gr_rev_date_fr;_txt_gr_rev_date_to;_txt_gr_rev_datefr;_txt_gr_rev_dateto;_txt_gr_rev_itmcode;_txt_gr_rev_receiptfrom;_txt_gr_rev_receiptto;_txt_gr_rev_reffr;_txt_gr_rev_refto;_txt_gr_rev_variant;_txt_gr_supplier_code;_txt_guid;_txt_hidden1;_txt_hiddenou;_txt_hiddentrantype;_grdgr_revmldetails;" DirtyTabs="" ServiceName="grtgrrmainpggrrevmreacoduisr" LinkID="" PostHelpTask="" PostLinkTask="" DataSavingTask="0" BaseArtifact="false" />
+    <Task Name="grtgrrmainpggrrevmrecnoli" Type="LINK" TaskDesc="Databased Hyper Link - For the GridControl _grdGR_revmldetails - Column Name - _Gr_receipt_no" ReportName="" RCTaskData="" RMTaskData="_grdgr_revmldetails;" DirtyTabs="" ServiceName="" LinkID="-482" PostHelpTask="" PostLinkTask="" DataSavingTask="0" BaseArtifact="false" />
+    <Task Name="grtgrrmainpginit" Type="INITIALIZE" TaskDesc="Initalize Task For the ILBO GRReversal" ReportName="" RCTaskData="_cmb_gr_adhoc_ite;_cmb_gr_folder;_cmb_gr_rev_fold;_cmb_gr_rev_type;_cmb_gr_rev_status;" RMTaskData="_txt_desc;_txt_gr_name;_txt_gr_rev_date_fr;_txt_gr_rev_date_to;_txt_gr_rev_datefr;_txt_gr_rev_dateto;_txt_gr_rev_itmcode;_txt_gr_rev_receiptfrom;_txt_gr_rev_receiptto;_txt_gr_rev_reffr;_txt_gr_rev_refto;_txt_gr_rev_variant;_txt_gr_supplier_code;_txt_guid;_txt_hidden1;_txt_hiddenou;_txt_hiddentrantype;" DirtyTabs="" ServiceName="grtgrrmainpginitsr" LinkID="" PostHelpTask="" PostLinkTask="" DataSavingTask="0" BaseArtifact="false" />
+    <Task Name="grtgrrmainpgmldrecnoli" Type="LINK" TaskDesc="Databased Hyper Link - For the GridControl _grdmldetails - Column Name - _ReceiptNo" ReportName="" RCTaskData="" RMTaskData="" DirtyTabs="" ServiceName="" LinkID="" PostHelpTask="" PostLinkTask="" DataSavingTask="0" BaseArtifact="false" />
+    <Task Name="grtgrrmainpgseartr" Type="TRANS" TaskDesc="Search" ReportName="" RCTaskData="" RMTaskData="_cmb_gr_adhoc_ite;_cmb_gr_folder;_cmb_gr_rev_fold;_cmb_gr_rev_status;_cmb_gr_rev_type;_txt_desc;_txt_gr_name;_txt_gr_rev_date_fr;_txt_gr_rev_date_to;_txt_gr_rev_datefr;_txt_gr_rev_dateto;_txt_gr_rev_itmcode;_txt_gr_rev_receiptfrom;_txt_gr_rev_receiptto;_txt_gr_rev_reffr;_txt_gr_rev_refto;_txt_gr_rev_variant;_txt_gr_supplier_code;_txt_guid;_txt_hidden1;_txt_hiddenou;_txt_hiddentrantype;_grdgr_revmldetails;" DirtyTabs="" ServiceName="grtgrrmainpgseartrsr" LinkID="" PostHelpTask="" PostLinkTask="" DataSavingTask="0" BaseArtifact="false" />
+    <Link ID="-483" BaseArtifact="false">
+        <SubscriberLink ParentComponentName="gr" ParentActivityName="grreversal" ParentILBOName="grreversal" ChildComponentName="type_setup" ChildActivityName="typhlp" ChildILBOName="typhlpmain" ChildActivityExtentionType="0" BaseArtifact="false">
+            <SubscriberData DataItemName="reason code" FlowDirection="1" RetrieveMultiple="0" ILBOName="typhlpmain" ControlName="_grdgr_revmldetails" ViewName="13" VariableName="" BaseArtifact="false" />
+        </SubscriberLink>
+    </Link>
+    <Link ID="-482" BaseArtifact="false">
+        <SubscriberLink ParentComponentName="gr" ParentActivityName="grreversal" ParentILBOName="grreversal" ChildComponentName="gr" ChildActivityName="grvwesccrt" ChildILBOName="grvwesccrtmain" ChildActivityExtentionType="0" BaseArtifact="false">
+            <SubscriberData DataItemName="receipt no." FlowDirection="0" RetrieveMultiple="0" ILBOName="grvwesccrtmain" ControlName="_grdgr_revmldetails" ViewName="14" VariableName="" BaseArtifact="false" />
+        </SubscriberLink>
+    </Link>
+    <Service Name="grtgrrmainpgcsstrsr" ComponentName="gr" NoOfSegments="3" SegmentNames="_hseg;grrevmref;grrevmsav;" TransactionScope="0" BaseArtifact="false">
+        <Segment Name="_hseg" SeqNo="1" MultiInstance="0" FlowDirection="2" bFilling="false" NoOfDIs="22" DINames="_desc;_gr_adhoc_ite;_gr_folder;_gr_name;_gr_rev_date_fr;_gr_rev_date_to;_gr_rev_datefr;_gr_rev_dateto;_gr_rev_fold;_gr_rev_itmcode;_gr_rev_receiptfrom;_gr_rev_receiptto;_gr_rev_reffr;_gr_rev_refto;_gr_rev_status;_gr_rev_type;_gr_rev_variant;_gr_supplier_code;_guid;_hidden1;_hiddenou;_hiddentrantype;" BaseArtifact="false">
+            <DataItem Name="_desc" FlowDirection="2" ControlName="_txt_desc" ViewName="_txt_desc" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_adhoc_ite" FlowDirection="2" ControlName="_cmb_gr_adhoc_ite" ViewName="_cmb_gr_adhoc_ite" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_folder" FlowDirection="2" ControlName="_cmb_gr_folder" ViewName="_cmb_gr_folder" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_name" FlowDirection="2" ControlName="_txt_gr_name" ViewName="_txt_gr_name" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date_fr" FlowDirection="2" ControlName="_txt_gr_rev_date_fr" ViewName="_txt_gr_rev_date_fr" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date_to" FlowDirection="2" ControlName="_txt_gr_rev_date_to" ViewName="_txt_gr_rev_date_to" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_datefr" FlowDirection="2" ControlName="_txt_gr_rev_datefr" ViewName="_txt_gr_rev_datefr" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_dateto" FlowDirection="2" ControlName="_txt_gr_rev_dateto" ViewName="_txt_gr_rev_dateto" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_fold" FlowDirection="2" ControlName="_cmb_gr_rev_fold" ViewName="_cmb_gr_rev_fold" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_itmcode" FlowDirection="2" ControlName="_txt_gr_rev_itmcode" ViewName="_txt_gr_rev_itmcode" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_receiptfrom" FlowDirection="2" ControlName="_txt_gr_rev_receiptfrom" ViewName="_txt_gr_rev_receiptfrom" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_receiptto" FlowDirection="2" ControlName="_txt_gr_rev_receiptto" ViewName="_txt_gr_rev_receiptto" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_reffr" FlowDirection="2" ControlName="_txt_gr_rev_reffr" ViewName="_txt_gr_rev_reffr" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_refto" FlowDirection="2" ControlName="_txt_gr_rev_refto" ViewName="_txt_gr_rev_refto" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_status" FlowDirection="2" ControlName="_cmb_gr_rev_status" ViewName="_cmb_gr_rev_status" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_type" FlowDirection="2" ControlName="_cmb_gr_rev_type" ViewName="_cmb_gr_rev_type" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_variant" FlowDirection="2" ControlName="_txt_gr_rev_variant" ViewName="_txt_gr_rev_variant" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_supplier_code" FlowDirection="2" ControlName="_txt_gr_supplier_code" ViewName="_txt_gr_supplier_code" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_guid" FlowDirection="2" ControlName="_txt_guid" ViewName="_txt_guid" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_hidden1" FlowDirection="2" ControlName="_txt_hidden1" ViewName="_txt_hidden1" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_hiddenou" FlowDirection="2" ControlName="_txt_hiddenou" ViewName="_txt_hiddenou" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_hiddentrantype" FlowDirection="2" ControlName="_txt_hiddentrantype" ViewName="_txt_hiddentrantype" PrecisionType="" BaseArtifact="false" />
+        </Segment>
+        <Segment Name="grrevmref" SeqNo="2" MultiInstance="1" FlowDirection="1" bFilling="false" NoOfDIs="12" DINames="_gr_date;_gr_desc;_gr_folderml;_gr_nameml;_gr_reason_code;_gr_receipt_no;_gr_ref_doc;_gr_remarks;_gr_rev_date;_gr_status;_gr_supp_code_ml;_type;" BaseArtifact="false">
+            <DataItem Name="_gr_date" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="2" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_desc" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="10" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_folderml" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="3" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_nameml" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="8" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_reason_code" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="13" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_receipt_no" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="14" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_ref_doc" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="6" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_remarks" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="12" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="15" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_status" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="5" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_supp_code_ml" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="7" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_type" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="4" PrecisionType="" BaseArtifact="false" />
+        </Segment>
+        <Segment Name="grrevmsav" SeqNo="2" MultiInstance="1" FlowDirection="0" bFilling="false" NoOfDIs="13" DINames="_gr_date;_gr_desc;_gr_folderml;_gr_nameml;_gr_reason_code;_gr_receipt_no;_gr_ref_doc;_gr_remarks;_gr_rev_date;_gr_status;_gr_supp_code_ml;_type;modeflag;" BaseArtifact="false">
+            <DataItem Name="_gr_date" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="2" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_desc" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="10" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_folderml" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="3" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_nameml" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="8" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_reason_code" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="13" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_receipt_no" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="14" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_ref_doc" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="6" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_remarks" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="12" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="15" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_status" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="5" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_supp_code_ml" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="7" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_type" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="4" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="modeflag" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="modeflag" PrecisionType="none" BaseArtifact="false" />
+        </Segment>
+    </Service>
+    <Service Name="grtgrrmainpgdeffetchsr" ComponentName="gr" NoOfSegments="2" SegmentNames="_hseg;grrevmref;" TransactionScope="2" BaseArtifact="false">
+        <Segment Name="_hseg" SeqNo="1" MultiInstance="0" FlowDirection="2" bFilling="false" NoOfDIs="22" DINames="_desc;_gr_adhoc_ite;_gr_folder;_gr_name;_gr_rev_date_fr;_gr_rev_date_to;_gr_rev_datefr;_gr_rev_dateto;_gr_rev_fold;_gr_rev_itmcode;_gr_rev_receiptfrom;_gr_rev_receiptto;_gr_rev_reffr;_gr_rev_refto;_gr_rev_status;_gr_rev_type;_gr_rev_variant;_gr_supplier_code;_guid;_hidden1;_hiddenou;_hiddentrantype;" BaseArtifact="false">
+            <DataItem Name="_desc" FlowDirection="2" ControlName="_txt_desc" ViewName="_txt_desc" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_adhoc_ite" FlowDirection="2" ControlName="_cmb_gr_adhoc_ite" ViewName="_cmb_gr_adhoc_ite" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_folder" FlowDirection="2" ControlName="_cmb_gr_folder" ViewName="_cmb_gr_folder" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_name" FlowDirection="2" ControlName="_txt_gr_name" ViewName="_txt_gr_name" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date_fr" FlowDirection="2" ControlName="_txt_gr_rev_date_fr" ViewName="_txt_gr_rev_date_fr" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date_to" FlowDirection="2" ControlName="_txt_gr_rev_date_to" ViewName="_txt_gr_rev_date_to" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_datefr" FlowDirection="2" ControlName="_txt_gr_rev_datefr" ViewName="_txt_gr_rev_datefr" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_dateto" FlowDirection="2" ControlName="_txt_gr_rev_dateto" ViewName="_txt_gr_rev_dateto" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_fold" FlowDirection="2" ControlName="_cmb_gr_rev_fold" ViewName="_cmb_gr_rev_fold" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_itmcode" FlowDirection="2" ControlName="_txt_gr_rev_itmcode" ViewName="_txt_gr_rev_itmcode" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_receiptfrom" FlowDirection="2" ControlName="_txt_gr_rev_receiptfrom" ViewName="_txt_gr_rev_receiptfrom" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_receiptto" FlowDirection="2" ControlName="_txt_gr_rev_receiptto" ViewName="_txt_gr_rev_receiptto" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_reffr" FlowDirection="2" ControlName="_txt_gr_rev_reffr" ViewName="_txt_gr_rev_reffr" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_refto" FlowDirection="2" ControlName="_txt_gr_rev_refto" ViewName="_txt_gr_rev_refto" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_status" FlowDirection="2" ControlName="_cmb_gr_rev_status" ViewName="_cmb_gr_rev_status" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_type" FlowDirection="2" ControlName="_cmb_gr_rev_type" ViewName="_cmb_gr_rev_type" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_variant" FlowDirection="2" ControlName="_txt_gr_rev_variant" ViewName="_txt_gr_rev_variant" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_supplier_code" FlowDirection="2" ControlName="_txt_gr_supplier_code" ViewName="_txt_gr_supplier_code" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_guid" FlowDirection="2" ControlName="_txt_guid" ViewName="_txt_guid" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_hidden1" FlowDirection="2" ControlName="_txt_hidden1" ViewName="_txt_hidden1" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_hiddenou" FlowDirection="2" ControlName="_txt_hiddenou" ViewName="_txt_hiddenou" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_hiddentrantype" FlowDirection="2" ControlName="_txt_hiddentrantype" ViewName="_txt_hiddentrantype" PrecisionType="" BaseArtifact="false" />
+        </Segment>
+        <Segment Name="grrevmref" SeqNo="2" MultiInstance="1" FlowDirection="1" bFilling="false" NoOfDIs="12" DINames="_gr_date;_gr_desc;_gr_folderml;_gr_nameml;_gr_reason_code;_gr_receipt_no;_gr_ref_doc;_gr_remarks;_gr_rev_date;_gr_status;_gr_supp_code_ml;_type;" BaseArtifact="false">
+            <DataItem Name="_gr_date" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="2" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_desc" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="10" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_folderml" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="3" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_nameml" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="8" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_reason_code" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="13" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_receipt_no" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="14" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_ref_doc" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="6" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_remarks" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="12" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="15" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_status" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="5" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_supp_code_ml" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="7" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_type" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="4" PrecisionType="" BaseArtifact="false" />
+        </Segment>
+    </Service>
+    <Service Name="grtgrrmainpggrrevmreacoduisr" ComponentName="gr" NoOfSegments="2" SegmentNames="_hseg;grrevmref;" TransactionScope="2" BaseArtifact="false">
+        <Segment Name="_hseg" SeqNo="1" MultiInstance="0" FlowDirection="2" bFilling="false" NoOfDIs="22" DINames="_desc;_gr_adhoc_ite;_gr_folder;_gr_name;_gr_rev_date_fr;_gr_rev_date_to;_gr_rev_datefr;_gr_rev_dateto;_gr_rev_fold;_gr_rev_itmcode;_gr_rev_receiptfrom;_gr_rev_receiptto;_gr_rev_reffr;_gr_rev_refto;_gr_rev_status;_gr_rev_type;_gr_rev_variant;_gr_supplier_code;_guid;_hidden1;_hiddenou;_hiddentrantype;" BaseArtifact="false">
+            <DataItem Name="_desc" FlowDirection="2" ControlName="_txt_desc" ViewName="_txt_desc" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_adhoc_ite" FlowDirection="2" ControlName="_cmb_gr_adhoc_ite" ViewName="_cmb_gr_adhoc_ite" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_folder" FlowDirection="2" ControlName="_cmb_gr_folder" ViewName="_cmb_gr_folder" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_name" FlowDirection="2" ControlName="_txt_gr_name" ViewName="_txt_gr_name" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date_fr" FlowDirection="2" ControlName="_txt_gr_rev_date_fr" ViewName="_txt_gr_rev_date_fr" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date_to" FlowDirection="2" ControlName="_txt_gr_rev_date_to" ViewName="_txt_gr_rev_date_to" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_datefr" FlowDirection="2" ControlName="_txt_gr_rev_datefr" ViewName="_txt_gr_rev_datefr" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_dateto" FlowDirection="2" ControlName="_txt_gr_rev_dateto" ViewName="_txt_gr_rev_dateto" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_fold" FlowDirection="2" ControlName="_cmb_gr_rev_fold" ViewName="_cmb_gr_rev_fold" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_itmcode" FlowDirection="2" ControlName="_txt_gr_rev_itmcode" ViewName="_txt_gr_rev_itmcode" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_receiptfrom" FlowDirection="2" ControlName="_txt_gr_rev_receiptfrom" ViewName="_txt_gr_rev_receiptfrom" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_receiptto" FlowDirection="2" ControlName="_txt_gr_rev_receiptto" ViewName="_txt_gr_rev_receiptto" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_reffr" FlowDirection="2" ControlName="_txt_gr_rev_reffr" ViewName="_txt_gr_rev_reffr" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_refto" FlowDirection="2" ControlName="_txt_gr_rev_refto" ViewName="_txt_gr_rev_refto" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_status" FlowDirection="2" ControlName="_cmb_gr_rev_status" ViewName="_cmb_gr_rev_status" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_type" FlowDirection="2" ControlName="_cmb_gr_rev_type" ViewName="_cmb_gr_rev_type" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_variant" FlowDirection="2" ControlName="_txt_gr_rev_variant" ViewName="_txt_gr_rev_variant" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_supplier_code" FlowDirection="2" ControlName="_txt_gr_supplier_code" ViewName="_txt_gr_supplier_code" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_guid" FlowDirection="2" ControlName="_txt_guid" ViewName="_txt_guid" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_hidden1" FlowDirection="2" ControlName="_txt_hidden1" ViewName="_txt_hidden1" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_hiddenou" FlowDirection="2" ControlName="_txt_hiddenou" ViewName="_txt_hiddenou" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_hiddentrantype" FlowDirection="2" ControlName="_txt_hiddentrantype" ViewName="_txt_hiddentrantype" PrecisionType="" BaseArtifact="false" />
+        </Segment>
+        <Segment Name="grrevmref" SeqNo="2" MultiInstance="1" FlowDirection="1" bFilling="false" NoOfDIs="12" DINames="_gr_date;_gr_desc;_gr_folderml;_gr_nameml;_gr_reason_code;_gr_receipt_no;_gr_ref_doc;_gr_remarks;_gr_rev_date;_gr_status;_gr_supp_code_ml;_type;" BaseArtifact="false">
+            <DataItem Name="_gr_date" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="2" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_desc" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="10" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_folderml" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="3" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_nameml" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="8" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_reason_code" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="13" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_receipt_no" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="14" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_ref_doc" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="6" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_remarks" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="12" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="15" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_status" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="5" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_supp_code_ml" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="7" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_type" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="4" PrecisionType="" BaseArtifact="false" />
+        </Segment>
+    </Service>
+    <Service Name="grtgrrmainpginitsr" ComponentName="gr" NoOfSegments="6" SegmentNames="_hseg;aiclod;foldlod;rcflod;rftlod;stalod;" TransactionScope="2" BaseArtifact="false">
+        <Segment Name="_hseg" SeqNo="1" MultiInstance="0" FlowDirection="2" bFilling="false" NoOfDIs="22" DINames="_desc;_gr_adhoc_ite;_gr_folder;_gr_name;_gr_rev_date_fr;_gr_rev_date_to;_gr_rev_datefr;_gr_rev_dateto;_gr_rev_fold;_gr_rev_itmcode;_gr_rev_receiptfrom;_gr_rev_receiptto;_gr_rev_reffr;_gr_rev_refto;_gr_rev_status;_gr_rev_type;_gr_rev_variant;_gr_supplier_code;_guid;_hidden1;_hiddenou;_hiddentrantype;" BaseArtifact="false">
+            <DataItem Name="_desc" FlowDirection="2" ControlName="_txt_desc" ViewName="_txt_desc" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_adhoc_ite" FlowDirection="2" ControlName="_cmb_gr_adhoc_ite" ViewName="_cmb_gr_adhoc_ite" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_folder" FlowDirection="2" ControlName="_cmb_gr_folder" ViewName="_cmb_gr_folder" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_name" FlowDirection="2" ControlName="_txt_gr_name" ViewName="_txt_gr_name" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date_fr" FlowDirection="2" ControlName="_txt_gr_rev_date_fr" ViewName="_txt_gr_rev_date_fr" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date_to" FlowDirection="2" ControlName="_txt_gr_rev_date_to" ViewName="_txt_gr_rev_date_to" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_datefr" FlowDirection="2" ControlName="_txt_gr_rev_datefr" ViewName="_txt_gr_rev_datefr" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_dateto" FlowDirection="2" ControlName="_txt_gr_rev_dateto" ViewName="_txt_gr_rev_dateto" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_fold" FlowDirection="2" ControlName="_cmb_gr_rev_fold" ViewName="_cmb_gr_rev_fold" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_itmcode" FlowDirection="2" ControlName="_txt_gr_rev_itmcode" ViewName="_txt_gr_rev_itmcode" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_receiptfrom" FlowDirection="2" ControlName="_txt_gr_rev_receiptfrom" ViewName="_txt_gr_rev_receiptfrom" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_receiptto" FlowDirection="2" ControlName="_txt_gr_rev_receiptto" ViewName="_txt_gr_rev_receiptto" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_reffr" FlowDirection="2" ControlName="_txt_gr_rev_reffr" ViewName="_txt_gr_rev_reffr" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_refto" FlowDirection="2" ControlName="_txt_gr_rev_refto" ViewName="_txt_gr_rev_refto" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_status" FlowDirection="2" ControlName="_cmb_gr_rev_status" ViewName="_cmb_gr_rev_status" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_type" FlowDirection="2" ControlName="_cmb_gr_rev_type" ViewName="_cmb_gr_rev_type" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_variant" FlowDirection="2" ControlName="_txt_gr_rev_variant" ViewName="_txt_gr_rev_variant" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_supplier_code" FlowDirection="2" ControlName="_txt_gr_supplier_code" ViewName="_txt_gr_supplier_code" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_guid" FlowDirection="2" ControlName="_txt_guid" ViewName="_txt_guid" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_hidden1" FlowDirection="2" ControlName="_txt_hidden1" ViewName="_txt_hidden1" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_hiddenou" FlowDirection="2" ControlName="_txt_hiddenou" ViewName="_txt_hiddenou" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_hiddentrantype" FlowDirection="2" ControlName="_txt_hiddentrantype" ViewName="_txt_hiddentrantype" PrecisionType="" BaseArtifact="false" />
+        </Segment>
+        <Segment Name="aiclod" SeqNo="2" MultiInstance="1" FlowDirection="1" bFilling="true" NoOfDIs="1" DINames="_gr_adhoc_ite;" BaseArtifact="false">
+            <DataItem Name="_gr_adhoc_ite" FlowDirection="1" ControlName="_cmb_gr_adhoc_ite" ViewName="_cmb_gr_adhoc_ite" PrecisionType="" BaseArtifact="false" />
+        </Segment>
+        <Segment Name="foldlod" SeqNo="3" MultiInstance="1" FlowDirection="1" bFilling="true" NoOfDIs="1" DINames="_gr_folder;" BaseArtifact="false">
+            <DataItem Name="_gr_folder" FlowDirection="1" ControlName="_cmb_gr_folder" ViewName="_cmb_gr_folder" PrecisionType="" BaseArtifact="false" />
+        </Segment>
+        <Segment Name="rcflod" SeqNo="4" MultiInstance="1" FlowDirection="1" bFilling="true" NoOfDIs="1" DINames="_gr_rev_fold;" BaseArtifact="false">
+            <DataItem Name="_gr_rev_fold" FlowDirection="1" ControlName="_cmb_gr_rev_fold" ViewName="_cmb_gr_rev_fold" PrecisionType="" BaseArtifact="false" />
+        </Segment>
+        <Segment Name="rftlod" SeqNo="5" MultiInstance="1" FlowDirection="1" bFilling="true" NoOfDIs="1" DINames="_gr_rev_type;" BaseArtifact="false">
+            <DataItem Name="_gr_rev_type" FlowDirection="1" ControlName="_cmb_gr_rev_type" ViewName="_cmb_gr_rev_type" PrecisionType="" BaseArtifact="false" />
+        </Segment>
+        <Segment Name="stalod" SeqNo="5" MultiInstance="1" FlowDirection="1" bFilling="true" NoOfDIs="1" DINames="_gr_rev_status;" BaseArtifact="false">
+            <DataItem Name="_gr_rev_status" FlowDirection="1" ControlName="_cmb_gr_rev_status" ViewName="_cmb_gr_rev_status" PrecisionType="" BaseArtifact="false" />
+        </Segment>
+    </Service>
+    <Service Name="grtgrrmainpgseartrsr" ComponentName="gr" NoOfSegments="3" SegmentNames="_hseg;grrevmref;grrevmsav;" TransactionScope="0" BaseArtifact="false">
+        <Segment Name="_hseg" SeqNo="1" MultiInstance="0" FlowDirection="2" bFilling="false" NoOfDIs="22" DINames="_desc;_gr_adhoc_ite;_gr_folder;_gr_name;_gr_rev_date_fr;_gr_rev_date_to;_gr_rev_datefr;_gr_rev_dateto;_gr_rev_fold;_gr_rev_itmcode;_gr_rev_receiptfrom;_gr_rev_receiptto;_gr_rev_reffr;_gr_rev_refto;_gr_rev_status;_gr_rev_type;_gr_rev_variant;_gr_supplier_code;_guid;_hidden1;_hiddenou;_hiddentrantype;" BaseArtifact="false">
+            <DataItem Name="_desc" FlowDirection="2" ControlName="_txt_desc" ViewName="_txt_desc" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_adhoc_ite" FlowDirection="2" ControlName="_cmb_gr_adhoc_ite" ViewName="_cmb_gr_adhoc_ite" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_folder" FlowDirection="2" ControlName="_cmb_gr_folder" ViewName="_cmb_gr_folder" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_name" FlowDirection="2" ControlName="_txt_gr_name" ViewName="_txt_gr_name" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date_fr" FlowDirection="2" ControlName="_txt_gr_rev_date_fr" ViewName="_txt_gr_rev_date_fr" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date_to" FlowDirection="2" ControlName="_txt_gr_rev_date_to" ViewName="_txt_gr_rev_date_to" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_datefr" FlowDirection="2" ControlName="_txt_gr_rev_datefr" ViewName="_txt_gr_rev_datefr" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_dateto" FlowDirection="2" ControlName="_txt_gr_rev_dateto" ViewName="_txt_gr_rev_dateto" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_fold" FlowDirection="2" ControlName="_cmb_gr_rev_fold" ViewName="_cmb_gr_rev_fold" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_itmcode" FlowDirection="2" ControlName="_txt_gr_rev_itmcode" ViewName="_txt_gr_rev_itmcode" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_receiptfrom" FlowDirection="2" ControlName="_txt_gr_rev_receiptfrom" ViewName="_txt_gr_rev_receiptfrom" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_receiptto" FlowDirection="2" ControlName="_txt_gr_rev_receiptto" ViewName="_txt_gr_rev_receiptto" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_reffr" FlowDirection="2" ControlName="_txt_gr_rev_reffr" ViewName="_txt_gr_rev_reffr" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_refto" FlowDirection="2" ControlName="_txt_gr_rev_refto" ViewName="_txt_gr_rev_refto" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_status" FlowDirection="2" ControlName="_cmb_gr_rev_status" ViewName="_cmb_gr_rev_status" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_type" FlowDirection="2" ControlName="_cmb_gr_rev_type" ViewName="_cmb_gr_rev_type" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_variant" FlowDirection="2" ControlName="_txt_gr_rev_variant" ViewName="_txt_gr_rev_variant" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_supplier_code" FlowDirection="2" ControlName="_txt_gr_supplier_code" ViewName="_txt_gr_supplier_code" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_guid" FlowDirection="2" ControlName="_txt_guid" ViewName="_txt_guid" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_hidden1" FlowDirection="2" ControlName="_txt_hidden1" ViewName="_txt_hidden1" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_hiddenou" FlowDirection="2" ControlName="_txt_hiddenou" ViewName="_txt_hiddenou" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_hiddentrantype" FlowDirection="2" ControlName="_txt_hiddentrantype" ViewName="_txt_hiddentrantype" PrecisionType="" BaseArtifact="false" />
+        </Segment>
+        <Segment Name="grrevmref" SeqNo="2" MultiInstance="1" FlowDirection="1" bFilling="false" NoOfDIs="12" DINames="_gr_date;_gr_desc;_gr_folderml;_gr_nameml;_gr_reason_code;_gr_receipt_no;_gr_ref_doc;_gr_remarks;_gr_rev_date;_gr_status;_gr_supp_code_ml;_type;" BaseArtifact="false">
+            <DataItem Name="_gr_date" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="2" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_desc" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="10" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_folderml" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="3" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_nameml" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="8" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_reason_code" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="13" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_receipt_no" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="14" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_ref_doc" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="6" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_remarks" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="12" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="15" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_status" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="5" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_supp_code_ml" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="7" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_type" FlowDirection="1" ControlName="_grdgr_revmldetails" ViewName="4" PrecisionType="" BaseArtifact="false" />
+        </Segment>
+        <Segment Name="grrevmsav" SeqNo="2" MultiInstance="1" FlowDirection="0" bFilling="false" NoOfDIs="13" DINames="_gr_date;_gr_desc;_gr_folderml;_gr_nameml;_gr_reason_code;_gr_receipt_no;_gr_ref_doc;_gr_remarks;_gr_rev_date;_gr_status;_gr_supp_code_ml;_type;modeflag;" BaseArtifact="false">
+            <DataItem Name="_gr_date" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="2" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_desc" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="10" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_folderml" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="3" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_nameml" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="8" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_reason_code" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="13" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_receipt_no" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="14" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_ref_doc" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="6" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_remarks" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="12" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_rev_date" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="15" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_status" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="5" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_gr_supp_code_ml" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="7" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="_type" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="4" PrecisionType="" BaseArtifact="false" />
+            <DataItem Name="modeflag" FlowDirection="0" ControlName="_grdgr_revmldetails" ViewName="modeflag" PrecisionType="none" BaseArtifact="false" />
+        </Segment>
+    </Service>
+    <VerInfo>
+        <Date>2024-03-08T06:52:10</Date>
+        <Author>Runtime</Author>
+        <ModelInfo>iEDK</ModelInfo>
+        <Version>2.2</Version>
+    </VerInfo>
+</RVWILBO>

@@ -1,0 +1,1122 @@
+{
+  "codeGen": "1.1.3.0",
+  "codeGenDate": "3/8/2024 12:22:37 PM",
+  "modelSource": "iedk",
+  "controller": "ilbo",
+  "viewModel": {
+    "type": "ilbo",
+    "data": {
+      "_txt_gr_rev_receiptfrom": "",
+      "_txt_gr_rev_receiptto": "",
+      "_cmb_gr_rev_status": "",
+      "_txt_gr_rev_datefr": "",
+      "_txt_gr_rev_dateto": "",
+      "_cmb_gr_folder": "",
+      "_txt_gr_supplier_code": "",
+      "_txt_gr_name": "",
+      "_cmb_gr_adhoc_ite": "",
+      "_txt_gr_rev_reffr": "",
+      "_txt_gr_rev_refto": "",
+      "_cmb_gr_rev_type": "",
+      "_txt_gr_rev_date_fr": "",
+      "_txt_gr_rev_date_to": "",
+      "_cmb_gr_rev_fold": "",
+      "_txt_gr_rev_itmcode": "",
+      "_txt_gr_rev_variant": "",
+      "_txt_desc": "",
+      "_txt_hidden1": "",
+      "_txt_hiddenou": "",
+      "_txt_hiddentrantype": "",
+      "_txt_guid": ""
+    },
+    "stores": {
+      "_grdgr_revmldetails_store": {
+        "gridStore": true,
+        "storeId": "_grdgr_revmldetails",
+        "fields": [
+          {
+            "name": "rn",
+            "type": "int"
+          },
+          {
+            "name": "sel",
+            "type": "boolean"
+          },
+          {
+            "name": "v14",
+            "type": "string"
+          },
+          {
+            "name": "v2",
+            "type": "date",
+            "format": "Y-m-d"
+          },
+          {
+            "name": "v3",
+            "type": "string"
+          },
+          {
+            "name": "v4",
+            "type": "string"
+          },
+          {
+            "name": "v5",
+            "type": "string"
+          },
+          {
+            "name": "v6",
+            "type": "string"
+          },
+          {
+            "name": "v7",
+            "type": "string"
+          },
+          {
+            "name": "v8",
+            "type": "string"
+          },
+          {
+            "name": "v13",
+            "type": "string"
+          },
+          {
+            "name": "v10",
+            "type": "string"
+          },
+          {
+            "name": "v15",
+            "type": "date",
+            "format": "Y-m-d"
+          },
+          {
+            "name": "v12",
+            "type": "string"
+          }
+        ],
+        "proxy": {
+          "type": "memory",
+          "reader": {
+            "type": "json",
+            "root": "data"
+          }
+        }
+      },
+      "_cmb_gr_rev_status_store": {
+        "fields": [
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "string"
+          }
+        ],
+        "proxy": {
+          "type": "memory"
+        }
+      },
+      "_cmb_gr_folder_store": {
+        "fields": [
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "string"
+          }
+        ],
+        "proxy": {
+          "type": "memory"
+        }
+      },
+      "_cmb_gr_adhoc_ite_store": {
+        "fields": [
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "string"
+          }
+        ],
+        "proxy": {
+          "type": "memory"
+        }
+      },
+      "_cmb_gr_rev_type_store": {
+        "fields": [
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "string"
+          }
+        ],
+        "proxy": {
+          "type": "memory"
+        }
+      },
+      "_cmb_gr_rev_fold_store": {
+        "fields": [
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "string"
+          }
+        ],
+        "proxy": {
+          "type": "memory"
+        }
+      }
+    }
+  },
+  "ilboConfig": {
+    "componentName": "gr",
+    "activityName": "grreversal",
+    "activityDesc": "GR Reversal",
+    "ilboName": "grreversal",
+    "ilboDesc": "GR Status Change",
+    "ilboType": "2"
+  },
+  "items": [
+    {
+      "role": "uipage",
+      "xtype": "ramcopanel",
+      "title": "Search Criteria",
+      "bodyCls": "x-bodyinnercontrols",
+      "border": false,
+      "collapsible": true,
+      "layout": {
+        "type": "ramcotable",
+        "columns": 6,
+        "tableAttrs": {
+          "style": {
+            "width": "100%"
+          }
+        }
+      },
+      "itemId": "_headersection",
+      "items": [
+        {
+          "xtype": "label",
+          "html": "Receipt No.From",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_txt_gr_rev_receiptfrom",
+          "forId": "_txt_gr_rev_receiptfrom_in"
+        },
+        {
+          "xtype": "textfield",
+          "role": "uipage",
+          "caption": "Receipt No.From",
+          "maxLength": 70,
+          "visibleLength": 0,
+          "hideLabel": true,
+          "mandatory": false,
+          "readOnly": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "value": "{_txt_gr_rev_receiptfrom.value}"
+          },
+          "itemId": "_txt_gr_rev_receiptfrom"
+        },
+        {
+          "xtype": "label",
+          "html": "Receipt No.To",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_txt_gr_rev_receiptto",
+          "forId": "_txt_gr_rev_receiptto_in"
+        },
+        {
+          "xtype": "textfield",
+          "role": "uipage",
+          "caption": "Receipt No.To",
+          "maxLength": 70,
+          "visibleLength": 0,
+          "hideLabel": true,
+          "mandatory": false,
+          "readOnly": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "value": "{_txt_gr_rev_receiptto.value}"
+          },
+          "itemId": "_txt_gr_rev_receiptto"
+        },
+        {
+          "xtype": "label",
+          "html": "Status",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_cmb_gr_rev_status",
+          "forId": "_cmb_gr_rev_status_in"
+        },
+        {
+          "xtype": "combofield",
+          "queryMode": "local",
+          "displayField": "text",
+          "valueField": "value",
+          "role": "uipage",
+          "caption": "Status",
+          "hideLabel": true,
+          "mandatory": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "format": "{_cmb_gr_rev_status.ft}",
+            "store": "{_cmb_gr_rev_status_store}",
+            "value": "{_cmb_gr_rev_status.value}"
+          },
+          "itemId": "_cmb_gr_rev_status"
+        },
+        {
+          "xtype": "label",
+          "html": "Receipt Date From",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_txt_gr_rev_datefr",
+          "forId": "_txt_gr_rev_datefr_in"
+        },
+        {
+          "xtype": "datefield",
+          "role": "uipage",
+          "caption": "Receipt Date From",
+          "maxLength": 10,
+          "visibleLength": 0,
+          "hideLabel": true,
+          "mandatory": false,
+          "readOnly": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "value": "{_txt_gr_rev_datefr.value}"
+          },
+          "itemId": "_txt_gr_rev_datefr"
+        },
+        {
+          "xtype": "label",
+          "html": "ReceiptDateTo",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_txt_gr_rev_dateto",
+          "forId": "_txt_gr_rev_dateto_in"
+        },
+        {
+          "xtype": "datefield",
+          "role": "uipage",
+          "caption": "ReceiptDateTo",
+          "maxLength": 10,
+          "visibleLength": 0,
+          "hideLabel": true,
+          "mandatory": false,
+          "readOnly": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "value": "{_txt_gr_rev_dateto.value}"
+          },
+          "itemId": "_txt_gr_rev_dateto"
+        },
+        {
+          "xtype": "label",
+          "html": "Folder",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_cmb_gr_folder",
+          "forId": "_cmb_gr_folder_in"
+        },
+        {
+          "xtype": "combofield",
+          "queryMode": "local",
+          "displayField": "text",
+          "valueField": "value",
+          "role": "uipage",
+          "caption": "Folder",
+          "hideLabel": true,
+          "mandatory": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "format": "{_cmb_gr_folder.ft}",
+            "store": "{_cmb_gr_folder_store}",
+            "value": "{_cmb_gr_folder.value}"
+          },
+          "itemId": "_cmb_gr_folder"
+        },
+        {
+          "xtype": "label",
+          "html": "Supplier/Customer Code",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_txt_gr_supplier_code",
+          "forId": "_txt_gr_supplier_code_in"
+        },
+        {
+          "xtype": "textfield",
+          "role": "uipage",
+          "caption": "Supplier/Customer Code",
+          "maxLength": 18,
+          "visibleLength": 0,
+          "hideLabel": true,
+          "mandatory": false,
+          "readOnly": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "value": "{_txt_gr_supplier_code.value}"
+          },
+          "itemId": "_txt_gr_supplier_code"
+        },
+        {
+          "xtype": "label",
+          "html": "Name",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_txt_gr_name",
+          "forId": "_txt_gr_name_in"
+        },
+        {
+          "xtype": "textfield",
+          "role": "uipage",
+          "caption": "Name",
+          "maxLength": 60,
+          "visibleLength": 0,
+          "hideLabel": true,
+          "mandatory": false,
+          "readOnly": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "value": "{_txt_gr_name.value}"
+          },
+          "itemId": "_txt_gr_name"
+        },
+        {
+          "xtype": "label",
+          "html": "Adhoc Item Class",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_cmb_gr_adhoc_ite",
+          "forId": "_cmb_gr_adhoc_ite_in"
+        },
+        {
+          "xtype": "combofield",
+          "queryMode": "local",
+          "displayField": "text",
+          "valueField": "value",
+          "role": "uipage",
+          "caption": "Adhoc Item Class",
+          "hideLabel": true,
+          "mandatory": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "format": "{_cmb_gr_adhoc_ite.ft}",
+            "store": "{_cmb_gr_adhoc_ite_store}",
+            "value": "{_cmb_gr_adhoc_ite.value}"
+          },
+          "itemId": "_cmb_gr_adhoc_ite"
+        },
+        {
+          "xtype": "label",
+          "html": "Ref.Doc.No.From",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_txt_gr_rev_reffr",
+          "forId": "_txt_gr_rev_reffr_in"
+        },
+        {
+          "xtype": "textfield",
+          "role": "uipage",
+          "caption": "Ref.Doc.No.From",
+          "maxLength": 70,
+          "visibleLength": 0,
+          "hideLabel": true,
+          "mandatory": false,
+          "readOnly": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "value": "{_txt_gr_rev_reffr.value}"
+          },
+          "itemId": "_txt_gr_rev_reffr"
+        },
+        {
+          "xtype": "label",
+          "html": "Ref.Doc.No.To",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_txt_gr_rev_refto",
+          "forId": "_txt_gr_rev_refto_in"
+        },
+        {
+          "xtype": "textfield",
+          "role": "uipage",
+          "caption": "Ref.Doc.No.To",
+          "maxLength": 70,
+          "visibleLength": 0,
+          "hideLabel": true,
+          "mandatory": false,
+          "readOnly": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "value": "{_txt_gr_rev_refto.value}"
+          },
+          "itemId": "_txt_gr_rev_refto"
+        },
+        {
+          "xtype": "label",
+          "html": "Ref.Doc.Type",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_cmb_gr_rev_type",
+          "forId": "_cmb_gr_rev_type_in"
+        },
+        {
+          "xtype": "combofield",
+          "queryMode": "local",
+          "displayField": "text",
+          "valueField": "value",
+          "role": "uipage",
+          "caption": "Ref.Doc.Type",
+          "hideLabel": true,
+          "mandatory": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "format": "{_cmb_gr_rev_type.ft}",
+            "store": "{_cmb_gr_rev_type_store}",
+            "value": "{_cmb_gr_rev_type.value}"
+          },
+          "itemId": "_cmb_gr_rev_type"
+        },
+        {
+          "xtype": "label",
+          "html": "Ref.Doc.Date.From",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_txt_gr_rev_date_fr",
+          "forId": "_txt_gr_rev_date_fr_in"
+        },
+        {
+          "xtype": "datefield",
+          "role": "uipage",
+          "caption": "Ref.Doc.Date.From",
+          "maxLength": 10,
+          "visibleLength": 0,
+          "hideLabel": true,
+          "mandatory": false,
+          "readOnly": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "value": "{_txt_gr_rev_date_fr.value}"
+          },
+          "itemId": "_txt_gr_rev_date_fr"
+        },
+        {
+          "xtype": "label",
+          "html": "Ref.Doc.Date.To",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_txt_gr_rev_date_to",
+          "forId": "_txt_gr_rev_date_to_in"
+        },
+        {
+          "xtype": "datefield",
+          "role": "uipage",
+          "caption": "Ref.Doc.Date.To",
+          "maxLength": 10,
+          "visibleLength": 0,
+          "hideLabel": true,
+          "mandatory": false,
+          "readOnly": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "value": "{_txt_gr_rev_date_to.value}"
+          },
+          "itemId": "_txt_gr_rev_date_to"
+        },
+        {
+          "xtype": "label",
+          "html": "Ref.Doc.Folder",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_cmb_gr_rev_fold",
+          "forId": "_cmb_gr_rev_fold_in"
+        },
+        {
+          "xtype": "combofield",
+          "queryMode": "local",
+          "displayField": "text",
+          "valueField": "value",
+          "role": "uipage",
+          "caption": "Ref.Doc.Folder",
+          "hideLabel": true,
+          "mandatory": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "format": "{_cmb_gr_rev_fold.ft}",
+            "store": "{_cmb_gr_rev_fold_store}",
+            "value": "{_cmb_gr_rev_fold.value}"
+          },
+          "itemId": "_cmb_gr_rev_fold"
+        },
+        {
+          "xtype": "label",
+          "html": "Item Code",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_txt_gr_rev_itmcode",
+          "forId": "_txt_gr_rev_itmcode_in"
+        },
+        {
+          "xtype": "textfield",
+          "role": "uipage",
+          "caption": "Item Code",
+          "maxLength": 32,
+          "visibleLength": 0,
+          "hideLabel": true,
+          "mandatory": false,
+          "readOnly": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "value": "{_txt_gr_rev_itmcode.value}"
+          },
+          "itemId": "_txt_gr_rev_itmcode"
+        },
+        {
+          "xtype": "label",
+          "html": "Variant Code",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_txt_gr_rev_variant",
+          "forId": "_txt_gr_rev_variant_in"
+        },
+        {
+          "xtype": "textfield",
+          "role": "uipage",
+          "caption": "Variant Code",
+          "maxLength": 8,
+          "visibleLength": 0,
+          "hideLabel": true,
+          "mandatory": false,
+          "readOnly": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "value": "{_txt_gr_rev_variant.value}"
+          },
+          "itemId": "_txt_gr_rev_variant"
+        },
+        {
+          "xtype": "label",
+          "html": "Desc",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "left"
+            }
+          },
+          "itemId": "lbl_txt_desc",
+          "forId": "_txt_desc_in"
+        },
+        {
+          "xtype": "textfield",
+          "role": "uipage",
+          "caption": "Desc",
+          "maxLength": 150,
+          "visibleLength": 0,
+          "hideLabel": true,
+          "mandatory": false,
+          "readOnly": false,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "bind": {
+            "value": "{_txt_desc.value}"
+          },
+          "itemId": "_txt_desc"
+        },
+        {
+          "xtype": "component",
+          "html": "&nbsp;",
+          "role": "uipage",
+          "hideLabel": true,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "itemId": "_frfiller13"
+        },
+        {
+          "xtype": "component",
+          "html": "&nbsp;",
+          "role": "uipage",
+          "hideLabel": true,
+          "tdAttrs": {
+            "style": {
+              "width": "16%"
+            }
+          },
+          "itemId": "_frfiller23"
+        },
+        {
+          "taskType": "trans",
+          "task": "grtgrrmainpgseartr",
+          "xtype": "button",
+          "html": "Search",
+          "role": "uipage",
+          "tdAttrs": {
+            "style": {
+              "width": "16%",
+              "text-align": "center"
+            }
+          },
+          "itemId": "_btngr_search"
+        }
+      ]
+    },
+    {
+      "role": "uipage",
+      "xtype": "ramcopanel",
+      "title": "Search Results",
+      "bodyCls": "x-bodyinnercontrols",
+      "bodyPadding": 0,
+      "border": false,
+      "collapsible": true,
+      "layout": {
+        "type": "ramcotable",
+        "columns": 1,
+        "tableAttrs": {
+          "style": {
+            "width": "100%"
+          }
+        }
+      },
+      "itemId": "_searchresults",
+      "items": [
+        {
+          "xtype": "ramcogrid",
+          "width": "100%",
+          "role": "uipage",
+          "height": 200,
+          "flex": 1,
+          "visibleRows": 10,
+          "columnLines": true,
+          "insertFlag": true,
+          "deleteFlag": true,
+          "showSelection": true,
+          "tdAttrs": {
+            "style": {
+              "width": "100%"
+            }
+          },
+          "bind": {
+            "format": "{_grdgr_revmldetails.ft}",
+            "store": "{_grdgr_revmldetails_store}",
+            "value": "{_grdgr_revmldetails.value}"
+          },
+          "itemId": "_grdgr_revmldetails",
+          "columns": [
+            {
+              "dataIndex": "rn",
+              "dataName": "rn",
+              "dataType": "char",
+              "name": "rn",
+              "text": "#",
+              "align": "right",
+              "titleAlign": "right",
+              "xtype": "ramcogridcolumn",
+              "headerWrap": true,
+              "locked": true,
+              "menuDisabled": true,
+              "width": 50
+            },
+            {
+              "dataIndex": "sel",
+              "dataName": "sel",
+              "dataType": "boolean",
+              "name": "sel",
+              "text": "",
+              "align": "center",
+              "titleAlign": "center",
+              "xtype": "ramcogridcheck",
+              "headerWrap": true,
+              "locked": true,
+              "menuDisabled": true,
+              "isCheck": true,
+              "width": 50
+            },
+            {
+              "taskType": "link",
+              "task": "grtgrrmainpggrrevmrecnoli",
+              "dataIndex": "v14",
+              "itemId": "v14",
+              "dataType": "char",
+              "name": "14",
+              "text": "Receipt No.",
+              "xtype": "linkcolumn",
+              "border": false,
+              "mandatory": false,
+              "hidden": false,
+              "maxLength": 70,
+              "visibleLength": 11
+            },
+            {
+              "dataIndex": "v2",
+              "itemId": "v2",
+              "dataType": "date",
+              "name": "2",
+              "text": "Date",
+              "xtype": "ramcogridcolumn",
+              "border": false,
+              "mandatory": false,
+              "hidden": false,
+              "maxLength": 10,
+              "visibleLength": 4
+            },
+            {
+              "dataIndex": "v3",
+              "itemId": "v3",
+              "dataType": "char",
+              "name": "3",
+              "text": "Folder",
+              "xtype": "ramcogridcolumn",
+              "border": false,
+              "mandatory": false,
+              "hidden": false,
+              "maxLength": 40,
+              "visibleLength": 6
+            },
+            {
+              "dataIndex": "v4",
+              "itemId": "v4",
+              "dataType": "char",
+              "name": "4",
+              "text": "Type",
+              "xtype": "ramcogridcolumn",
+              "border": false,
+              "mandatory": false,
+              "hidden": false,
+              "maxLength": 25,
+              "visibleLength": 4
+            },
+            {
+              "dataIndex": "v5",
+              "itemId": "v5",
+              "dataType": "char",
+              "name": "5",
+              "text": "Status",
+              "xtype": "ramcogridcolumn",
+              "border": false,
+              "mandatory": false,
+              "hidden": false,
+              "maxLength": 25,
+              "visibleLength": 6
+            },
+            {
+              "dataIndex": "v6",
+              "itemId": "v6",
+              "dataType": "char",
+              "name": "6",
+              "text": "Reference Document",
+              "xtype": "ramcogridcolumn",
+              "border": false,
+              "mandatory": false,
+              "hidden": false,
+              "maxLength": 18,
+              "visibleLength": 18
+            },
+            {
+              "dataIndex": "v7",
+              "itemId": "v7",
+              "dataType": "char",
+              "name": "7",
+              "text": "Supplier/Customer Code",
+              "xtype": "ramcogridcolumn",
+              "border": false,
+              "mandatory": false,
+              "hidden": false,
+              "maxLength": 70,
+              "visibleLength": 22
+            },
+            {
+              "dataIndex": "v8",
+              "itemId": "v8",
+              "dataType": "char",
+              "name": "8",
+              "text": "Name",
+              "xtype": "ramcogridcolumn",
+              "border": false,
+              "mandatory": false,
+              "hidden": false,
+              "maxLength": 60,
+              "visibleLength": 4
+            },
+            {
+              "uiTask": "grtgrrmainpggrrevmreacodui",
+              "uiTaskType": "ui",
+              "dataIndex": "v13",
+              "itemId": "v13",
+              "dataType": "char",
+              "name": "13",
+              "text": "Reason Code",
+              "xtype": "ramcogridcolumn",
+              "helpTask": "grtgrrmainpggrrevmreacodhe",
+              "helpTaskType": "help",
+              "border": false,
+              "mandatory": false,
+              "helpIcon": true,
+              "hidden": false,
+              "maxLength": 128,
+              "visibleLength": 11,
+              "editor": {
+                "xtype": "textfield"
+              }
+            },
+            {
+              "dataIndex": "v10",
+              "itemId": "v10",
+              "dataType": "char",
+              "name": "10",
+              "text": "Description",
+              "xtype": "ramcogridcolumn",
+              "border": false,
+              "mandatory": false,
+              "hidden": false,
+              "maxLength": 150,
+              "visibleLength": 11
+            },
+            {
+              "dataIndex": "v15",
+              "itemId": "v15",
+              "dataType": "date",
+              "name": "15",
+              "text": "Reversal Date",
+              "xtype": "ramcogridcolumn",
+              "border": false,
+              "mandatory": false,
+              "hidden": false,
+              "maxLength": 10,
+              "visibleLength": 13,
+              "editor": {
+                "xtype": "datefield"
+              }
+            },
+            {
+              "dataIndex": "v12",
+              "itemId": "v12",
+              "dataType": "char",
+              "name": "12",
+              "text": "Remarks",
+              "xtype": "ramcogridcolumn",
+              "border": false,
+              "mandatory": false,
+              "hidden": false,
+              "maxLength": 250,
+              "visibleLength": 7,
+              "editor": {
+                "xtype": "textfield"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "uipage",
+      "xtype": "ramcopanel",
+      "bodyCls": "x-bodyinnercontrols",
+      "border": false,
+      "collapsible": false,
+      "header": false,
+      "layout": {
+        "type": "ramcotable",
+        "columns": 3,
+        "tableAttrs": {
+          "style": {
+            "width": "100%"
+          }
+        }
+      },
+      "itemId": "_buttonsection",
+      "items": [
+        {
+          "xtype": "component",
+          "html": "&nbsp;",
+          "role": "uipage",
+          "hideLabel": true,
+          "tdAttrs": {
+            "style": {
+              "width": "50%"
+            }
+          },
+          "itemId": "_frfiller"
+        },
+        {
+          "taskType": "trans",
+          "task": "grtgrrmainpgcsstr",
+          "xtype": "button",
+          "html": "Confirm Status Change",
+          "role": "uipage",
+          "tdAttrs": {
+            "style": {
+              "width": "50%",
+              "text-align": "center"
+            }
+          },
+          "itemId": "_btnconfirmstatuschange"
+        },
+        {
+          "xtype": "component",
+          "html": "&nbsp;",
+          "role": "uipage",
+          "hideLabel": true,
+          "tdAttrs": {
+            "style": {
+              "width": "50%"
+            }
+          },
+          "itemId": "_frfiller1"
+        }
+      ]
+    }
+  ]
+}

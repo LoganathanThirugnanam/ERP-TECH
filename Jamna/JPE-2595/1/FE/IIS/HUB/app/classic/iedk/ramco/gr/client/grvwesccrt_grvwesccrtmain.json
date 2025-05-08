@@ -1,0 +1,28 @@
+{
+  "codeGen": "1.1.3.0",
+  "codeGenDate": "3/8/2024 12:22:35 PM",
+  "modelSource": "iedk",
+  "ic": [
+    {
+      "grvwesccrtmain_mainscreen_section08": {
+        "config": [
+          {
+            "rn": 4,
+            "cn": 1,
+            "width": "100%"
+          }
+        ],
+        "items": [
+          {
+            "taskType": "link",
+            "task": "grtvired1mainpgvwbatli",
+            "xtype": "link",
+            "html": "View Batch details",
+            "role": "uipage",
+            "itemId": "_lnkviewbatchdetails"
+          }
+        ]
+      }
+    }
+  ]
+}
